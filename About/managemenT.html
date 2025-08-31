@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOEWR Navigation Bilingual</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root{
+      /* MOEWR logo band blue */
+      --brand:#2FA8E1;
+      --brand-dark:#0d7cb0;
+      --ink:#0f172a;
+    }
+  </style>
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Top Quick Link Bar -->
+ <div class="bg-[var(--brand)] text-white flex justify-between items-center px-6 py-2 text-sm">
+  <a href="#" class="flex items-center space-x-1 hover:underline text-[#E63946] font-bold">
+    <span>🔗</span><span data-i18n="quickLink">QUICK LINK</span>
+  </a>
+
+  <div class="flex space-x-6 font-semibold uppercase">
+    <a href="#" data-i18n="eswg" class="hover:text-[#2FA8E1]">ESWG</a>
+    <a href="#" data-i18n="forum" class="hover:text-[#2FA8E1]">Forum</a>
+    <a href="#" data-i18n="affiliates" class="hover:text-[#2FA8E1]">Affiliates</a>
+    <a href="#" data-i18n="platform" class="hover:text-[#2FA8E1]">Electrification Platform</a>
+    <a href="#" data-i18n="stakeholders" class="hover:text-[#2FA8E1]">Stakeholders</a>
+    <a href="#" data-i18n="grm" class="hover:text-[#2FA8E1]">GRM</a>
+    <a href="#" data-i18n="jobs" class="hover:text-[#2FA8E1]">Jobs</a>
+  </div>
+</div>
+
+
+  <!-- Main Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="/assets/tamarta.png" alt="MOEWR Logo" class="h-20 w-20" />
+      </div>
+
+      <!-- Nav Links -->
+    <nav class="md:flex items-center space-x-4 font-sans font-semibold text-xl">
+  <a href="/index.html" data-i18n="home" class="group inline-flex items-center gap-1 text-red-500 hover:text-sky-600">
+    <span>Home</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="about" href="#" data-i18n="about" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>About</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="depart" href="#" data-i18n="departments" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Departments</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="project" href="#" data-i18n="projects" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Projects</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="resources" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Resources</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="media" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Media</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="contact" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Contact</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+</nav>
+
+
+      <!-- Right Side -->
+      <div class="flex items-center space-x-6">
+        <a href="#" class="border border-sky-600 text-sky-600 px-4 py-2 rounded hover:bg-sky-50 font-medium" data-i18n="dashboard">
+          WSCF Dashboard
+        </a>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-500 hover:text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+        </button>
+
+        <!-- Language Toggle -->
+        <div class="flex space-x-2 ml-4">
+          <button onclick="setLanguage('en')" class="px-2 py-1 border rounded text-sm hover:bg-slate-100">EN</button>
+          <button onclick="setLanguage('so')" class="px-2 py-1 border rounded text-sm hover:bg-slate-100">SO</button>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- dropdowns -->
+
+<div id="aboutDrop" class="hidden absolute left-[290px] top-[130px] z-50 bg-[#2e98d4] border-sky-600 shadow-md p-5  h-[200px]  flex justify-center items-center space-y-3">
+
+  <ul class="space-y-3 font-bold text-xl">
+    <li class="hover:bg-white text-black px-2">Ministry</li>
+    <li id="ministerdrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Minister
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+    <li class="hover:bg-white text-black px-2">Director General</li>
+    <li class="hover:bg-white text-black px-2">Ministry Leadership</li>
+    <li class="hover:bg-white text-black px-2">Management Structure</li>
+  </ul>
+</div>
+<!-- minister dropdow -->
+<div id="minister" class=" hidden absolute left-[540px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md p-5  h-[170px]  flex justify-center items-center space-y-3">
+
+  <ul class="space-y-3 font-bold text-xl">
+    <li class="hover:bg-[#2e98d4] text-black px-2">Minister</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Deputy Minister</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">State Minister</li>
+  </ul>
+</div>
+<!-- end -->
+
+
+<!-- project dropdown -->
+
+<div id="projectDrop" class=" hidden absolute left-[440px] top-[140px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[150px]  h-[80px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="energyDrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Energy Sector
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+    <li id="waterdrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Water Sector
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+  </ul>
+</div>
+
+<!-- end project -->
+
+<!-- Energy sector -->
+
+<div id="enegrySector" class=" hidden absolute left-[585px] top-[160px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[150px]  h-[90px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/projects/energy/Hareact.html">SESRP</a>
+    </li>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/projects/energy/sesrp.html">HAREACT</a>
+    </li><br>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">TA</li>
+  </ul>
+</div>
+<!-- end energy sectior -->
+
+<!-- water sector -->
+<div id="waterSector" class=" hidden absolute left-[585px] top-[160px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[190px]  h-[180px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/kwsp.html">KWSP</a>
+    </li>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/Barwaaq.html">Barwaaqo pROJECT</a>
+    </li><br>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/SCRP_PROJECT.html">SCRP PROJECT</li></a>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/GW4R_PROJECT.html">HoA GW4R PROJECT</li></a>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/SCRP_PROJECT.html">KOBCIYE PROJECT</li></a>
+  </ul>
+</div>
+
+
+<!-- end sector -->
+
+<!-- departent dropdwon -->
+<div id="departDrop" class=" hidden absolute left-[340px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[120px] w-[250px]  h-[180px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+    <li class="hover:bg-[#2e98d4] text-black px-2">Energy</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Water</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Hydro-mdrology</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Policy and Planning</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Maintanance and Cordination</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Admin and Finance</li>
+  </ul>
+</div>
+
+<!-- end departent -->
+
+<!--end dropdowns -->
+ <!-- Hero Section -->
+
+
+
+ <!-- main ===============================================MAIN------------=================MAIN-->
+
+<!-- ========== SECTION 1: Top Leadership ========== -->
+<section class="relative py-12 md:py-16 bg-gradient-to-b from-[var(--brand)]/5 via-white to-white">
+  <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[var(--brand)] via-[var(--brand-dark)] to-[var(--brand)]"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <header class="mb-8 md:mb-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--ink)]">The Ministry Leadership</h2>
+      <div class="mx-auto mt-3 h-1 w-24 bg-[var(--brand)] rounded"></div>
+    </header>
+
+    <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+      <!-- Minister -->
+      <article class="group bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="assets/img/minister.jpg" alt="H.E. Ahmed H. Baraki" class="w-full h-full object-cover group-hover:scale-[1.03] transition">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[var(--brand-dark)]"><a href="#" class="hover:underline">H.E. Ahmed H. Baraki</a></h3>
+          <p class="mt-1 text-slate-600">Minister of Energy &amp; Water Resources – Jubaland</p>
+          <p class="mt-3 text-sm text-slate-600">
+            Email: <a href="mailto:minister.moewr@jubalandstate.so" class="text-[var(--brand-dark)] underline">minister.moewr@jubalandstate.so</a><br>
+            Phones: +252613639816 / +254746666992
+          </p>
+          <div class="mt-4">
+            <a href="#" class="inline-flex items-center px-3 py-2 rounded-lg bg-[var(--brand)] text-slate-900 font-semibold hover:bg-[var(--brand-dark)] hover:text-white transition">
+              Learn more About the Minister
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Deputy Minister -->
+      <article class="group bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="assets/img/deputy-minister.jpg" alt="H.E Mustafe Haji Mohamed" class="w-full h-full object-cover group-hover:scale-[1.03] transition">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[var(--brand-dark)]"><a href="#" class="hover:underline">H.E Mustafe Haji Mohamed</a></h3>
+          <p class="mt-1 text-slate-600">Deputy Minister – Energy &amp; Water Resources, Jubaland</p>
+          <p class="mt-3 text-sm text-slate-600">
+            Email: <a href="mailto:deputyminister-momew@jubalandstate.so" class="text-[var(--brand-dark)] underline">deputyminister-momew@jubalandstate.so</a><br>
+            Phone: +252 612 536 316
+          </p>
+          <div class="mt-4">
+            <a href="#" class="inline-flex items-center px-3 py-2 rounded-lg bg-[var(--brand)] text-slate-900 font-semibold hover:bg-[var(--brand-dark)] hover:text-white transition">
+              Learn more About the Deputy Minister
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Director General -->
+      <article class="group bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="assets/img/dg-ahmed.jpg" alt="Ahmed Osman Siyah" class="w-full h-full object-cover group-hover:scale-[1.03] transition">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[var(--brand-dark)]"><a href="#" class="hover:underline">Ahmed Osman Siyah</a></h3>
+          <p class="mt-1 text-slate-600">Director General – MEWR, Jubaland</p>
+          <p class="mt-3 text-sm text-slate-600">
+            Email: <a href="mailto:dg-moewr@jubalandstate.so" class="text-[var(--brand-dark)] underline">dg-moewr@jubalandstate.so</a><br>
+            Phone: +252 619 950 037 / +252 61 995 0037
+          </p>
+          <div class="mt-4">
+            <a href="#" class="inline-flex items-center px-3 py-2 rounded-lg bg-[var(--brand)] text-slate-900 font-semibold hover:bg-[var(--brand-dark)] hover:text-white transition">
+              Learn more About the Director General
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 2: Directors ========== -->
+<section class="py-12 md:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <header class="mb-8 md:mb-12 text-center">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-[var(--ink)]">Directors</h2>
+      <div class="mx-auto mt-3 h-1 w-20 bg-[var(--brand)] rounded"></div>
+    </header>
+
+    <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+      <!-- HR/Finance Director -->
+      <article class="group bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="assets/img/hr-director.jpg" alt="Mohamed Ahmed Mohamoud" class="w-full h-full object-cover group-hover:scale-[1.03] transition">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[var(--brand-dark)]">Mohamed Ahmed Mohamoud</h3>
+          <p class="mt-1 text-slate-600">HR/ADM &amp; Finance Director – MEWR, Jubaland</p>
+          <p class="mt-3 text-sm text-slate-600">
+            Email: <a href="mailto:hradmnfin-moewr@jubalandstate.so" class="text-[var(--brand-dark)] underline">hradmnfin-moewr@jubalandstate.so</a><br>
+            Phone: +252 61 939 3920
+          </p>
+          <div class="mt-4">
+            <a href="#" class="inline-flex items-center px-3 py-2 rounded-lg bg-[var(--brand)] text-slate-900 font-semibold hover:bg-[var(--brand-dark)] hover:text-white transition">Facebook</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Energy Director -->
+      <article class="group bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="assets/img/energy-director.jpg" alt="Abdisalan Haji Aden" class="w-full h-full object-cover group-hover:scale-[1.03] transition">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[var(--brand-dark)]">Abdisalan Haji Aden</h3>
+          <p class="mt-1 text-slate-600">Energy Director – MEWR, Jubaland</p>
+          <p class="mt-3 text-sm text-slate-600">
+            Email: <a href="mailto:energydirector.moewr@jubalandstate.so" class="text-[var(--brand-dark)] underline">energydirector.moewr@jubalandstate.so</a><br>
+            Phone: +252 615 726 669
+          </p>
+          <div class="mt-4">
+            <a href="#" class="inline-flex items-center px-3 py-2 rounded-lg bg-[var(--brand)] text-slate-900 font-semibold hover:bg-[var(--brand-dark)] hover:text-white transition">Facebook</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Water Director -->
+      <article class="group bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="assets/img/water-director.jpg" alt="Liban Mowlid Hussein" class="w-full h-full object-cover group-hover:scale-[1.03] transition">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[var(--brand-dark)]">Liban Mowlid Hussein</h3>
+          <p class="mt-1 text-slate-600">Water Director – MEWR, Jubaland</p>
+          <p class="mt-3 text-sm text-slate-600">
+            Email: <a href="mailto:waterservices-moewr@jubalandstate.so" class="text-[var(--brand-dark)] underline">waterservices-moewr@jubalandstate.so</a><br>
+            Phone: +252 61 686 7269
+          </p>
+          <div class="mt-4">
+            <a href="#" class="inline-flex items-center px-3 py-2 rounded-lg bg-[var(--brand)] text-slate-900 font-semibold hover:bg-[var(--brand-dark)] hover:text-white transition">Facebook</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 3: Organogram ========== -->
+<section class="py-12 md:py-16 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <header class="mb-8 md:mb-12 text-center">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-[var(--ink)]">Ministry Structure / Organogram</h2>
+      <div class="mx-auto mt-3 h-1 w-20 bg-[var(--brand)] rounded"></div>
+    </header>
+
+    <div class="bg-white rounded-2xl shadow-sm ring-1 ring-[var(--brand)]/30 p-4 md:p-6">
+      <img
+        src="assets/img/organogram.jpg"  
+        alt="Ministry Organogram"
+        class="mx-auto max-h-[720px] w-full object-contain" />
+    </div>
+  </div>
+</section>
+ 
+
+ 
+
+
+  
+
+  
+
+<!-- end main ======================main====================================================main-->
+<!-- footer ------------------------------------>
+
+<footer class="bg-[#2FA8E1] text-slate-900">
+  <!-- Top mini-nav -->
+  <div class="border-b border-[#0A1A3F]/20">
+    <div class="max-w-7xl mx-auto flex flex-col gap-3 sm:flex-row items-center justify-between px-4 py-3 text-sm">
+      <nav class="flex flex-wrap gap-x-6 gap-y-2">
+        <a href="#" class="hover:text-[#0A1A3F] transition">About</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">Departments</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">Events</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">News</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <span class="text-slate-900/70">Follow us</span>
+        <a href="#" aria-label="Facebook" class="p-1.5 rounded-full bg-white/70 hover:bg-white transition text-[#0A1A3F]">
+          <!-- Facebook -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M22 12.06C22 6.53 17.52 2 12 2S2 6.53 2 12.06c0 5.02 3.66 9.19 8.44 9.94v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.5-3.88 3.78-3.88 1.1 0 2.25.2 2.25.2v2.46h-1.27c-1.25 0-1.64.78-1.64 1.58v1.9h2.79l-.45 2.9h-2.34V22c4.78-.75 8.44-4.92 8.44-9.94z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="p-1.5 rounded-full bg-white/70 hover:bg-white transition text-[#0A1A3F]">
+          <!-- Twitter/X -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M3 3l7.2 9.6L3.5 21h2.2l5.7-6.6 4.6 6.6H21l-7.6-10.9L20.3 3h-2.2l-5.2 6-4.2-6H3z"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="p-1.5 rounded-full bg-white/70 hover:bg-white transition text-[#0A1A3F]">
+          <!-- YouTube -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M23.5 7.1a3.4 3.4 0 0 0-2.4-2.4C19.2 4 12 4 12 4s-7.2 0-9.1.7A3.4 3.4 0 0 0 .5 7.1 35 35 0 0 0 0 12a35 35 0 0 0 .5 4.9 3.4 3.4 0 0 0 2.4 2.4C4.8 20 12 20 12 20s7.2 0 9.1-.7a3.4 3.4 0 0 0 2.4-2.4A35 35 0 0 0 24 12a35 35 0 0 0-.5-4.9zM9.8 15.3V8.7L15.8 12l-6 3.3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main columns -->
+  <div class="relative">
+    <!-- subtle brand gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#2FA8E1] via-[#2FA8E1] to-[#7FD6F5]"></div>
+
+    <div class="relative max-w-7xl mx-auto grid gap-10 md:grid-cols-3 px-4 py-12">
+      <!-- Column 1: MoEWR contact -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">MoEWR</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-900/80">
+          <span class="font-medium">Address:</span> Bondhere District, Mogadishu, Somalia.
+        </p>
+
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <!-- clock -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-[#0A1A3F]"><path fill="currentColor" d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm1 11h5v-2h-4V7h-2v6Z"/></svg>
+            <span><span class="text-slate-900/70">Opening Hours:</span> Sat–Thu: 8:00 am – 6:00 pm</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <!-- phone -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-[#0A1A3F]"><path fill="currentColor" d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .4 2 .6 3.1.6.7 0 1.3.6 1.3 1.3V20c0 .7-.6 1.3-1.3 1.3C9.8 21.3 2.7 14.2 2.7 5.3 2.7 4.6 3.3 4 4 4h3.1c.7 0 1.3.6 1.3 1.3 0 1.1.2 2.1.6 3.1.1.4 0 .9-.3 1.2l-2.1 2.2Z"/></svg>
+            <span>Phone: +252 00 000000</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <!-- mail -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-[#0A1A3F]"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
+            <span>Email: <a href="mailto:info@moewr.gov.so" class="hover:text-[#0A1A3F] underline decoration-[#0A1A3F]/40">info@moewr.gov.so</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: MoEWR FMS -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">MoEWR FMS</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MoEWR Puntland</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEM – Somaliland</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEWR – Southwest State of Somalia</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEWR – Galmudug</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEWR – Jubaland State</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Useful Links -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">Useful Links</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Office of the President</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>OPM</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Ministry of Planning</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Environment &amp; Climate Change</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Ministry of Petroleum &amp; Mineral</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-[#0A1A3F]/20">
+    <div class="max-w-7xl mx-auto px-4 py-4 text-center text-xs text-slate-900/70">
+      Ministry of Energy &amp; Water Resources © 2023. All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Counter Script -->
+<script>
+  function animateCounter(counter) {
+    const target = +counter.getAttribute("data-target");
+    const speed = 200; // smaller = faster
+    let count = 0;
+
+    const updateCount = () => {
+      const increment = Math.ceil(target / speed);
+      if (count < target) {
+        count += increment;
+        counter.textContent = count;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    updateCount();
+  }
+
+  // Run counter when in viewport
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target); // run once
+      }
+    });
+  }, { threshold: 0.6 });
+
+  document.querySelectorAll(".counter").forEach(counter => {
+    counterObserver.observe(counter);
+  });
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,       // animation duration (ms)
+    easing: 'ease-out',  // easing curve
+    once: true,          // run only once
+  });
+</script>
+
+
+
+
+  <!-- Language Dictionary -->
+ <script src="/js/about.js"></script>
+ <script src="/js/main.js"></script>
+
+</body>
+</html>

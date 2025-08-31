@@ -7,6 +7,67 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
+<style>
+/* Seamless crossing marquees */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+.animate-marquee-l { animation: marquee-left linear infinite; }
+.animate-marquee-r { animation: marquee-right linear infinite; }
+
+/* Optional: smooth image rendering and consistent height */
+img { image-rendering: -webkit-optimize-contrast; }
+</style>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#2FA8E1',
+            'brand-dark': '#0d7cb0',
+            ink: '#0f172a',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root{
+      --brand:#2FA8E1;
+      --brand-dark:#0d7cb0;
+    }
+    html,body{scroll-behavior:smooth}
+    .chip{
+      @apply inline-flex items-center gap-2 rounded-full border border-black/5 bg-white px-4 py-2 text-sm shadow-sm;
+    }
+    .card{
+      @apply bg-white rounded-xl shadow-sm ring-1 ring-black/5;
+    }
+    .kicker{
+      @apply uppercase tracking-wider text-xs font-semibold text-brand;
+    }
+    .section-title{
+      @apply text-2xl md:text-3xl font-bold tracking-tight;
+    }
+    .metric{
+      @apply text-3xl font-extrabold text-ink;
+    }
+  </style>
+  
 </head>
 <body class="font-sans">
 
@@ -109,28 +170,28 @@
       </div>
     </div>
   </header>
-<!-- dropdowns=========================================dropdown -->
+<!-- dropdowns===============Dropdown==========================dropdown ===============================Dropdown==================-->
 
 <div id="aboutDrop" class="hidden absolute left-[290px] top-[130px] z-50 bg-[#2e98d4] border-sky-600 shadow-md p-5  h-[200px]  flex justify-center items-center space-y-3">
 
   <ul class="space-y-3 font-bold text-xl">
-    <li class="hover:bg-white text-black px-2"><a href="department/minister.html">Ministry</a></li>
+    <li class="hover:bg-white text-black px-2"><a href="About/minister.html">Ministry</a></li>
     <li id="ministerdrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Minister
       <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
       <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
     </svg>
     </li>
-    <li class="hover:bg-white text-black px-2">Director General</li>
+    <li class="hover:bg-white text-black px-2"><a href="About/minister/Genereraldirector.html">Director General</a></li>
     <li class="hover:bg-white text-black px-2">Ministry Leadership</li>
-    <li class="hover:bg-white text-black px-2">Management Structure</li>
+    <li class="hover:bg-white text-black px-2"><a href="About/managemenT.html">Management Structure</a></li>
   </ul>
 </div>
 <!-- minister dropdow -->
 <div id="minister" class=" hidden absolute left-[540px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md p-5  h-[170px]  flex justify-center items-center space-y-3">
 
   <ul class="space-y-3 font-bold text-xl">
-    <li class="hover:bg-[#2e98d4] text-black px-2">Minister</li>
-    <li class="hover:bg-[#2e98d4] text-black px-2">Deputy Minister</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2"><a href="About/minister/minister.html">Minister</a></li>
+    <li class="hover:bg-[#2e98d4] text-black px-2"><a href="About/minister/deputy minister.html">Deputy Minister</a></li>
     <li class="hover:bg-[#2e98d4] text-black px-2">State Minister</li>
   </ul>
 </div>
@@ -188,247 +249,761 @@
 <!-- end sector -->
 
 <!-- departent dropdwon -->
-<div id="departDrop" class=" hidden absolute left-[340px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[120px] w-[250px]  h-[180px]  flex justify-center items-center space-y-3">
+<div id="departDrop" class=" hidden absolute left-[340px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[80px] w-[250px]  h-[180px]  flex justify-center items-center space-y-3">
 
   <ul  class="space-y-3 font-bold  ">
-    <li class="hover:bg-[#2e98d4] text-black px-2">Energy</li>
-    <li class="hover:bg-[#2e98d4] text-black px-2">Water</li>
-    <li class="hover:bg-[#2e98d4] text-black px-2">Hydro-mdrology</li>
-    <li class="hover:bg-[#2e98d4] text-black px-2">Policy and Planning</li>
-    <li class="hover:bg-[#2e98d4] text-black px-2">Maintanance and Cordination</li>
-    <li class="hover:bg-[#2e98d4] text-black px-2">Admin and Finance</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2"><a href="department/energy.html">Energy</a></li>
+    <li class="hover:bg-[#2e98d4] text-black px-2"><a href="department/water.html">Water</a></li>
+    <li class="hover:bg-[#2e98d4] text-black px-2"><a href="department/policy&planning.html">Policy and Planning</a></li>
+    <li class="hover:bg-[#2e98d4] text-black px-2"><a href="department/admin&finance.html">Admin and Finance</a></li>
   </ul>
 </div>
 
 <!-- end departent -->
 
-<!--end dropdowns -->
+<!--end dropdowns =============================================eND DROPDOWN---------------====-->
  <!-- Hero Section -->
-<section class="relative bg-gray-800 text-white">
-  <div class="relative">
-    <!-- Background Image -->
-    <img src="assets/bg.jpg" alt="Minister" class="w-full h-[500px] object-cover opacity-80">
-    
-    <!-- Overlay Content -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-      <p class="text-lg sm:text-3xl font-bold font-medium w-[70%] mb-6" data-i18n="missionStatement">
-        Our mission is to ensure sustainable energy access and secure water resources for all Somalis.
-      </p>
-      <a href="#about" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded shadow font-semibold" data-i18n="discover">
-        Discover More
-      </a>
-    </div>
-  </div>
-</section>
 
-<!-- Vision, Mission, Values Section -->
-<section class="bg-white py-12">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
-    
-    <!-- Vision Card -->
-    <div class="group bg-white shadow-md rounded-lg p-6 text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-         data-aos="zoom-in" data-aos-delay="0">
-      <div class="text-red-600 text-4xl mb-4 transform-gpu transition duration-300 group-hover:scale-110" aria-hidden="true">🎯</div>
-      <h3 class="text-xl font-bold mb-2" data-i18n="vision">Vision</h3>
-      <p class="text-gray-600 mb-4 text-sm" data-i18n="visionText">
-        The MoEWR is mandated for the development of energy and water resources for national prosperity.
-      </p>
-      <a href="#" class="text-sky-600 font-semibold hover:underline" data-i18n="details">More Details</a>
-    </div>
 
-    <!-- Mission Card -->
-    <div class="group bg-white shadow-md rounded-lg p-6 text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-         data-aos="zoom-in" data-aos-delay="150">
-      <div class="text-red-600 text-4xl mb-4 transform-gpu transition duration-300 group-hover:scale-110" aria-hidden="true">🚀</div>
-      <h3 class="text-xl font-bold mb-2" data-i18n="mission">Mission</h3>
-      <p class="text-gray-600 mb-4 text-sm" data-i18n="missionText">
-        Strive to provide reliable, adequate, and accessible clean energy and water resources with quality services to society.
-      </p>
-      <a href="#" class="text-sky-600 font-semibold hover:underline" data-i18n="details">More Details</a>
-    </div>
+<!-- MAIN=======================================MAIN-=======================================MAIN -->
 
-    <!-- Value Card -->
-    <div class="group bg-white shadow-md rounded-lg p-6 text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-         data-aos="zoom-in" data-aos-delay="300">
-      <div class="text-red-600 text-4xl mb-4 transform-gpu transition duration-300 group-hover:scale-110" aria-hidden="true">✅</div>
-      <h3 class="text-xl font-bold mb-2" data-i18n="value">Value</h3>
-      <p class="text-gray-600 mb-4 text-sm" data-i18n="valueText">
-        Ensure and maintain high standards in the discharge of responsibilities and the delivery of services.
-      </p>
-      <a href="#" class="text-sky-600 font-semibold hover:underline" data-i18n="details">More Details</a>
-    </div>
+<section id="about" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-slate-50"></div>
 
-  </div>
-</section>
+    <div class="max-w-6xl mx-auto px-4 py-12 lg:py-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="aspect-[16/9] lg:aspect-[4/3] w-full overflow-hidden rounded-2xl ring-1 ring-black/10 shadow-sm" data-aos="fade-right">
+        <img src="assets/bg.jpg" alt="Ministry HQ" class="w-full h-full object-cover" />
+      </div>
+
+      <div data-aos="fade-left">
+        <span class="kicker">About Us</span>
+        <h2 class="section-title mt-2">Ministry of Energy & Water Resources – Jubaland</h2>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          Established in 2014, the Ministry leads the Energy and Water sectors — shaping policy, expanding access,
+          and stewarding resources for equitable development across Jubaland.
+        </p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3">
+          <li class="chip">Energy & Water Policy</li>
+          <li class="chip">Access & Equity</li>
+          <li class="chip">Sustainable Infrastructure</li>
+          <li class="chip">Community Resilience</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= -->
+  <!-- Section 2: Vision & Mission Bands -->
+  <!-- ================================= -->
+  <section id="vision-mission" class="relative">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card p-8 bg-gradient-to-br from-brand/10 to-white" data-aos="zoom-in">
+          <h3 class="section-title">Our Vision</h3>
+          <p class="mt-3 text-slate-600">
+            To provide safe, affordable water and energy for all — driving socio-economic progress and climate-resilient livelihoods.
+          </p>
+        </div>
+        <div class="card p-8 bg-gradient-to-bl from-brand/10 to-white" data-aos="zoom-in" data-aos-delay="150">
+          <h3 class="section-title">Our Mission</h3>
+          <p class="mt-3 text-slate-600">
+            To develop, manage, and equitably distribute water and energy resources through sustainable policies,
+            strong institutions, and inclusive partnerships.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================== -->
+  <!-- Section 3: Ministry Mandates (6x)  -->
+  <!-- ================================== -->
+  <section id="mandates" class="py-14 lg:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="kicker">Mandates</span>
+        <h2 class="section-title mt-2">Ministry Mandates</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Repeatable item -->
+        <div class="card p-6" data-aos="fade-up">
+          <div class="h-12 w-12 rounded-lg bg-brand/10 grid place-items-center">
+            <span class="text-brand text-xl">📜</span>
+          </div>
+          <h4 class="mt-4 font-semibold">Regulate & Set Policy</h4>
+          <p class="text-slate-600 mt-2">Energy & Water Resources Sectors.</p>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-12 w-12 rounded-lg bg-brand/10 grid place-items-center">
+            <span class="text-brand text-xl">🧭</span>
+          </div>
+          <h4 class="mt-4 font-semibold">Plan & Implement</h4>
+          <p class="text-slate-600 mt-2">Development of Energy & Water sectors.</p>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-12 w-12 rounded-lg bg-brand/10 grid place-items-center">
+            <span class="text-brand text-xl">📈</span>
+          </div>
+          <h4 class="mt-4 font-semibold">Monitor & Evaluate</h4>
+          <p class="text-slate-600 mt-2">Sectoral activities and outcomes.</p>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up">
+          <div class="h-12 w-12 rounded-lg bg-brand/10 grid place-items-center">
+            <span class="text-brand text-xl">🚰</span>
+          </div>
+          <h4 class="mt-4 font-semibold">Ensure Reliable Access</h4>
+          <p class="text-slate-600 mt-2">Clean energy, water, and sewerage.</p>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-12 w-12 rounded-lg bg-brand/10 grid place-items-center">
+            <span class="text-brand text-xl">⚙️</span>
+          </div>
+          <h4 class="mt-4 font-semibold">Promote Development</h4>
+          <p class="text-slate-600 mt-2">Water & energy resources growth.</p>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-12 w-12 rounded-lg bg-brand/10 grid place-items-center">
+            <span class="text-brand text-xl">💸</span>
+          </div>
+          <h4 class="mt-4 font-semibold">Mobilize Resources</h4>
+          <p class="text-slate-600 mt-2">Funding & partnerships for sectors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================== -->
+  <!-- Section 4: Key Output Areas (7 compact chips) -->
+  <!-- =========================================== -->
+  <section id="outputs" class="py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-8" data-aos="fade-up">
+        <span class="kicker">Key Outputs</span>
+        <h2 class="section-title mt-2">Ministry Key Output Areas</h2>
+      </div>
+      <div class="flex flex-wrap gap-3 justify-center" data-aos="zoom-in">
+        <span class="chip">1. Resource Empowerment</span>
+        <span class="chip">2. Resource Management</span>
+        <span class="chip">3. Resource Development</span>
+        <span class="chip">4. Policy Formulation</span>
+        <span class="chip">5. Public–Private Partnerships</span>
+        <span class="chip">6. Government-Led Coordination</span>
+        <span class="chip">7. Emergency Response Plan</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================== -->
+  <!-- Section 5: Photo Gallery (3x2 grid)   -->
+  <!-- ===================================== -->
+  <section id="gallery" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-8" data-aos="fade-up">
+        <span class="kicker">Gallery</span>
+        <h2 class="section-title mt-2">Recent Activities</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-up" data-aos-delay="100">
+        <!-- 6 images, replace src -->
+        <img class="rounded-xl ring-1 ring-black/10 object-cover w-full h-56" src="/assets/gallery/1.jpg" alt="">
+        <img class="rounded-xl ring-1 ring-black/10 object-cover w-full h-56" src="/assets/gallery/2.jpg" alt="">
+        <img class="rounded-xl ring-1 ring-black/10 object-cover w-full h-56" src="/assets/gallery/3.jpg" alt="">
+        <img class="rounded-xl ring-1 ring-black/10 object-cover w-full h-56" src="/assets/gallery/4.jpg" alt="">
+        <img class="rounded-xl ring-1 ring-black/10 object-cover w-full h-56" src="/assets/gallery/5.jpg" alt="">
+        <img class="rounded-xl ring-1 ring-black/10 object-cover w-full h-56" src="/assets/gallery/6.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================= -->
+  <!-- Section 6: Departments (4 feature cards) -->
+  <!-- ======================================= -->
+  <section id="departments" class="py-14 lg:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="kicker">Departments</span>
+        <h2 class="section-title mt-2">Core Ministry Departments</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card p-6" data-aos="fade-up">
+          <div class="text-5xl">👥</div>
+          <h4 class="mt-4 font-semibold">Admin, HR & Finance</h4>
+          <p class="text-slate-600 mt-1">Governance, support & financial management.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">
+            Read for More <span>→</span>
+          </a>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-5xl">🚰</div>
+          <h4 class="mt-4 font-semibold">Water Department</h4>
+          <p class="text-slate-600 mt-1">Sustainable water resources & services.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">
+            Read for More →
+          </a>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-5xl">💡</div>
+          <h4 class="mt-4 font-semibold">Energy Department</h4>
+          <p class="text-slate-600 mt-1">Affordable, reliable energy expansion.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">
+            More info →
+          </a>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-5xl">📊</div>
+          <h4 class="mt-4 font-semibold">Planning & Policy</h4>
+          <p class="text-slate-600 mt-1">Research, assessments, and policy.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">
+            Read For More →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================== -->
+  <!-- Section 7: Other Sectors (2 long cards) -->
+  <!-- ====================================== -->
+  <section id="other-sectors" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="kicker">Other Sectors</span>
+        <h2 class="section-title mt-2">Support Facilities</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card p-6" data-aos="fade-right">
+          <div class="text-5xl">🏛️</div>
+          <h4 class="mt-3 font-semibold">Warehouse</h4>
+          <p class="text-slate-600 mt-2">
+            Central hub for WASH supplies — ensuring accessibility and equitable distribution across communities.
+          </p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </div>
+
+        <div class="card p-6" data-aos="fade-left">
+          <div class="text-5xl">🧪</div>
+          <h4 class="mt-3 font-semibold">Water Laboratory</h4>
+          <p class="text-slate-600 mt-2">
+            Operational since 2021 (fully equipped 2022) to support water quality and sector projects.
+          </p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">More info →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================== -->
+  <!-- Section 8: Achievements (metrics grid) -->
+  <!-- ===================================== -->
+  <section id="achievements" class="py-14 lg:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="kicker">Summary</span>
+        <h2 class="section-title mt-2">Ministry Achievements</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Repeat with your real numbers -->
+        <div class="card p-6" data-aos="zoom-in">
+          <div class="metric">2 MW</div>
+          <p class="text-slate-600 mt-1">Renewable energy added.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="50">
+          <div class="metric">500k+</div>
+          <p class="text-slate-600 mt-1">People with clean water access.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="metric">20+</div>
+          <p class="text-slate-600 mt-1">Projects completed.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="150">
+          <div class="metric">2,000</div>
+          <p class="text-slate-600 mt-1">Public streetlights.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="metric">43,277</div>
+          <p class="text-slate-600 mt-1">Hygiene kits distributed.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="250">
+          <div class="metric">277</div>
+          <p class="text-slate-600 mt-1">Shallow wells built/rehab.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="metric">92</div>
+          <p class="text-slate-600 mt-1">Boreholes built/rehab.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="350">
+          <div class="metric">226</div>
+          <p class="text-slate-600 mt-1">Water kiosks.</p>
+        </div>
+        <div class="card p-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="metric">790</div>
+          <p class="text-slate-600 mt-1">Barkad constructed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= -->
+  <!-- Section 9: Our Services (6 cards) -->
+  <!-- ================================= -->
+  <section id="services" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="kicker">Our Services</span>
+        <h2 class="section-title mt-2">What We Deliver</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- service card -->
+        <div class="card overflow-hidden" data-aos="fade-up">
+          <img class="h-40 w-full object-cover" src="/assets/services/policy.jpg" alt="">
+          <div class="p-5">
+            <h4 class="font-semibold">Energy Policy Planning</h4>
+            <p class="text-slate-600 mt-1">Forward-thinking policies for sustainable development.</p>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+          <img class="h-40 w-full object-cover" src="/assets/services/resource.jpg" alt="">
+          <div class="p-5">
+            <h4 class="font-semibold">Resource Management</h4>
+            <p class="text-slate-600 mt-1">Strategies for effective stewardship & balance.</p>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <img class="h-40 w-full object-cover" src="/assets/services/water.jpg" alt="">
+          <div class="p-5">
+            <h4 class="font-semibold">Water Supply Solutions</h4>
+            <p class="text-slate-600 mt-1">Clean, consistent community water services.</p>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden" data-aos="fade-up">
+          <img class="h-40 w-full object-cover" src="/assets/services/renewable.jpg" alt="">
+          <div class="p-5">
+            <h4 class="font-semibold">Renewable Energy Projects</h4>
+            <p class="text-slate-600 mt-1">Wind, solar, hydro initiatives.</p>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+          <img class="h-40 w-full object-cover" src="/assets/services/infra.jpg" alt="">
+          <div class="p-5">
+            <h4 class="font-semibold">Infrastructure Development</h4>
+            <p class="text-slate-600 mt-1">Design & implementation oversight.</p>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <img class="h-40 w-full object-cover" src="/assets/services/training.jpg" alt="">
+          <div class="p-5">
+            <h4 class="font-semibold">Community Training</h4>
+            <p class="text-slate-600 mt-1">Sustainable energy & resource conservation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- Section 10: Current Interventions (grid) -->
+  <!-- ======================================== -->
+  <section id="interventions" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="kicker">Projects</span>
+        <h2 class="section-title mt-2">Current Interventions</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project card -->
+        <article class="card p-6" data-aos="fade-up">
+          <h4 class="font-semibold">Kismaayo Urban Water Supply</h4>
+          <p class="text-slate-600 mt-2">
+            Jointly implemented with partners to enhance urban water distribution and quality.
+          </p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+
+        <article class="card p-6" data-aos="fade-up" data-aos-delay="50">
+          <h4 class="font-semibold">SESRP Project</h4>
+          <p class="text-slate-600 mt-2">Sector reforms to increase access and lower-cost electricity supply.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+
+        <article class="card p-6" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="font-semibold">HoA GW4R Project</h4>
+          <p class="text-slate-600 mt-2">Groundwater for Resilience — access, storage, and management.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+
+        <article class="card p-6" data-aos="fade-up">
+          <h4 class="font-semibold">BARWAAQO Project</h4>
+          <p class="text-slate-600 mt-2">Rural water resilience, improved infrastructure, & quality.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+
+        <article class="card p-6" data-aos="fade-up" data-aos-delay="50">
+          <h4 class="font-semibold">HAREACT Project</h4>
+          <p class="text-slate-600 mt-2">Access to renewable energy & clean cooking technologies.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+
+        <article class="card p-6" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="font-semibold">SCRP Project</h4>
+          <p class="text-slate-600 mt-2">Crisis response & rehabilitation in priority locations.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+
+        <article class="card p-6" data-aos="fade-up">
+          <h4 class="font-semibold">KOBCIYE Project</h4>
+          <p class="text-slate-600 mt-2">Water security for pastoralists & farmers (WFP partnership).</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+
+        <article class="card p-6" data-aos="fade-up" data-aos-delay="50">
+          <h4 class="font-semibold">LUGLOW Project</h4>
+          <p class="text-slate-600 mt-2">Water scheme enhancement with UNICEF & ECHO support.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold" href="#">Read for More →</a>
+        </article>
+      </div>
+    </div>
+  </section>
 
 <!--  -->
- <section class="py-12 sm:py-16 bg-slate-50">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-    
-    <!-- Title -->
-    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2" data-aos="fade-up">
-      The Ministry Departments
+  <!-- SECTION 1: Ministry Officials -->
+  <section class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="mb-8 flex items-end justify-between gap-4">
+        <h2 class="section-title">Ministry Officials</h2>
+        <span class="pill">Leadership</span>
+      </header>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Card -->
+        <article class="bg-white rounded-2xl shadow-brand overflow-hidden">
+          <img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop" alt="H.E. Ahmed H. Baraki"/>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-semibold">H.E. Ahmed H. Baraki</h3>
+            <p class="text-slate-600">Minister of Energy & Water Resources – Jubaland</p>
+            <div class="text-sm text-slate-600">
+              <p>Email: <a class="text-brand hover:underline" href="mailto:minister.moewr@jubalandstate.so">minister.moewr@jubalandstate.so</a></p>
+              <p>Phones: +252 61 363 9816 / +254 746 666 992</p>
+            </div>
+            <div class="pt-2">
+              <a href="#" class="inline-flex items-center rounded-lg bg-brand px-3 py-1.5 text-white hover:bg-brandDark">Facebook</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-brand overflow-hidden">
+          <img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop" alt="H.E Mustafe Haji Mohamed"/>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-semibold">H.E Mustafe Haji Mohamed</h3>
+            <p class="text-slate-600">Deputy Minister</p>
+            <div class="text-sm text-slate-600">
+              <p>Email: <a class="text-brand hover:underline" href="mailto:deputyminister-momew@jubalandstate.so">deputyminister-momew@jubalandstate.so</a></p>
+              <p>Tel: +252 612 536 316</p>
+            </div>
+            <a href="#" class="inline-flex items-center rounded-lg bg-brand px-3 py-1.5 text-white hover:bg-brandDark">Facebook</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-brand overflow-hidden">
+          <img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1200&auto=format&fit=crop" alt="Ahmed Osman Siyah"/>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-semibold">Ahmed Osman Siyah</h3>
+            <p class="text-slate-600">Director General</p>
+            <div class="text-sm text-slate-600">
+              <p>Email: <a class="text-brand hover:underline" href="mailto:dg-moewr@jubalandstate.so">dg-moewr@jubalandstate.so</a></p>
+              <p>Phones: +252 61 895 0037 / +252 61 854 9958</p>
+            </div>
+            <a href="#" class="inline-flex items-center rounded-lg bg-brand px-3 py-1.5 text-white hover:bg-brandDark">Facebook</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Testimonials (scroll-snap carousel) -->
+  <section class="py-16 bg-gradient-to-b from-white to-brand/5">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="mb-6 flex items-end justify-between gap-4">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="flex gap-2">
+          <button id="prev" class="rounded-full bg-white shadow px-3 py-2 hover:bg-brand/10" aria-label="Previous">‹</button>
+          <button id="next" class="rounded-full bg-white shadow px-3 py-2 hover:bg-brand/10" aria-label="Next">›</button>
+        </div>
+      </header>
+
+      <div id="slides" class="relative flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scroll-smooth">
+        <!-- Slide -->
+        <figure class="min-w-[90%] md:min-w-[60%] lg:min-w-[45%] snap-center bg-white rounded-2xl p-6 shadow-brand">
+          <figcaption class="flex items-center gap-3 mb-3">
+            <img class="h-12 w-12 rounded-full ring-2 ring-brand object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop" alt="Ahmed H. Baraki">
+            <div>
+              <p class="font-semibold">H.E Ahmed H. Baraki</p>
+              <p class="text-xs text-slate-500">Minister</p>
+            </div>
+          </figcaption>
+          <blockquote class="text-lg leading-relaxed text-slate-700">
+            “Water is essential to life in Jubaland State… they are the fundamental of our economy, agriculture, and daily existence.”
+          </blockquote>
+        </figure>
+
+        <figure class="min-w-[90%] md:min-w-[60%] lg:min-w-[45%] snap-center bg-white rounded-2xl p-6 shadow-brand">
+          <figcaption class="flex items-center gap-3 mb-3">
+            <img class="h-12 w-12 rounded-full ring-2 ring-brand object-cover" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=300&auto=format&fit=crop" alt="Mustafe Haji">
+            <div>
+              <p class="font-semibold">H.E Mustafe Haji Mohamed</p>
+              <p class="text-xs text-slate-500">Deputy Minister</p>
+            </div>
+          </figcaption>
+          <blockquote class="text-lg leading-relaxed text-slate-700">
+            “Efficient planning and clean energy access power our communities and future.”
+          </blockquote>
+        </figure>
+
+        <figure class="min-w-[90%] md:min-w-[60%] lg:min-w-[45%] snap-center bg-white rounded-2xl p-6 shadow-brand">
+          <figcaption class="flex items-center gap-3 mb-3">
+            <img class="h-12 w-12 rounded-full ring-2 ring-brand object-cover" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=300&auto=format&fit=crop" alt="Ahmed Osman Siyah">
+            <div>
+              <p class="font-semibold">Ahmed Osman Siyah</p>
+              <p class="text-xs text-slate-500">Director General</p>
+            </div>
+          </figcaption>
+          <blockquote class="text-lg leading-relaxed text-slate-700">
+            “Partnerships and accountability keep services reliable for every household.”
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Partners – marquee -->
+ <section class="py-10 bg-[#2FA8E1]">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-center text-white text-2xl md:text-3xl font-extrabold tracking-tight">
+      Our Partners
     </h2>
-    <p class="text-slate-600 mb-10" data-aos="fade-up" data-aos-delay="100">
-      The Ministry of Energy and Water Resources has the following Departments.
-    </p>
 
-    <!-- Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      
-      <!-- Department Card -->
-      <div data-aos="zoom-in" data-aos-delay="100">
-        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition-transform duration-300 hover:scale-105">
-          <img src="assets/tamarta.png" alt="Department Energy" class="mx-auto h-32 object-contain mb-4">
-          <h3 class="font-semibold text-lg mb-2">Department Energy</h3>
-          <a href="#" class="text-red-600 font-medium hover:underline">Read More</a>
+    <!-- Row A (left -> right) -->
+    <div class="relative overflow-hidden mt-8 rounded-xl bg-white/10 ring-1 ring-white/20 group">
+      <div class="flex items-center gap-14 w-[200%] animate-marquee-l [animation-duration:30s] hover:[animation-play-state:paused]">
+        <!-- strip A -->
+        <div class="flex items-center gap-14 w-1/2 py-6 px-8">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=UNICEF" alt="UNICEF">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=WFP" alt="WFP">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=FAO" alt="FAO">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=NRC" alt="NRC">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=IOM" alt="IOM">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=World+Vision" alt="World Vision">
+        </div>
+        <!-- duplicate A for seamless loop -->
+        <div class="flex items-center gap-14 w-1/2 py-6 px-8" aria-hidden="true">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=UNICEF" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=WFP" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=FAO" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=NRC" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=IOM" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=World+Vision" alt="">
         </div>
       </div>
-
-      <div data-aos="zoom-in" data-aos-delay="200">
-        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition-transform duration-300 hover:scale-105">
-          <img src="assets/tamarta.png" alt="Department Water" class="mx-auto h-32 object-contain mb-4">
-          <h3 class="font-semibold text-lg mb-2">Department of Water</h3>
-          <a href="#" class="text-red-600 font-medium hover:underline">Read More</a>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in" data-aos-delay="300">
-        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition-transform duration-300 hover:scale-105">
-          <img src="assets/tamarta.png" alt="Maintenance & Coordination" class="mx-auto h-32 object-contain mb-4">
-          <h3 class="font-semibold text-lg mb-2">Maintenance & Coordination</h3>
-          <a href="#" class="text-red-600 font-medium hover:underline">Read More</a>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in" data-aos-delay="400">
-        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition-transform duration-300 hover:scale-105">
-          <img src="assets/tamarta.png" alt="Policy & Planning" class="mx-auto h-32 object-contain mb-4">
-          <h3 class="font-semibold text-lg mb-2">Policy & Planning</h3>
-          <a href="#" class="text-red-600 font-medium hover:underline">Read More</a>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in" data-aos-delay="500">
-        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition-transform duration-300 hover:scale-105">
-          <img src="assets/tamarta.png" alt="Admin & Finance" class="mx-auto h-32 object-contain mb-4">
-          <h3 class="font-semibold text-lg mb-2">Admin & Finance</h3>
-          <a href="#" class="text-red-600 font-medium hover:underline">Read More</a>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in" data-aos-delay="600">
-        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition-transform duration-300 hover:scale-105">
-          <img src="assets/tamarta.png" alt="Hydrometeorological" class="mx-auto h-32 object-contain mb-4">
-          <h3 class="font-semibold text-lg mb-2">Department of Hydrometeorological</h3>
-          <a href="#" class="text-red-600 font-medium hover:underline">Read More</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<section class="bg-[#0a1a3f] py-12">
-  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-    
-    <!-- Energy Projects -->
-    <div data-aos="fade-up" data-aos-delay="100">
-      <div class="text-red-500 text-4xl mb-2">⚡</div>
-      <div class="text-3xl font-bold counter" data-target="12">0</div>
-      <p class="mt-2">Energy Projects</p>
     </div>
 
-    <!-- Water Projects -->
-    <div data-aos="fade-up" data-aos-delay="200">
-      <div class="text-red-500 text-4xl mb-2">🚰</div>
-      <div class="text-3xl font-bold counter" data-target="20">0</div>
-      <p class="mt-2">Water Projects</p>
-    </div>
-
-    <!-- Wells Rehabilitated -->
-    <div data-aos="fade-up" data-aos-delay="300">
-      <div class="text-red-500 text-4xl mb-2">🛠️</div>
-      <div class="text-3xl font-bold counter" data-target="50">0</div>
-      <p class="mt-2">Wells Rehabilitated</p>
-    </div>
-
-    <!-- Shallow Wells -->
-    <div data-aos="fade-up" data-aos-delay="400">
-      <div class="text-red-500 text-4xl mb-2">⛲</div>
-      <div class="text-3xl font-bold counter" data-target="55">0</div>
-      <p class="mt-2">Shallow Wells</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="py-12 sm:py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <!-- Heading -->
-    <div class="text-center mb-8 sm:mb-10">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900" data-aos="fade-up" data-i18n="leadershipTitle">
-        The Ministry Leadership
-      </h2>
-      <p class="mt-1 text-sm text-slate-500" data-aos="fade-up" data-aos-delay="100" data-i18n="leadershipSubtitle">
-        Leadership of the Ministry of Energy and Water Resources
-      </p>
-    </div>
-
-    <!-- Leadership cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <!-- Card 1 -->
-      <article class="group relative overflow-hidden rounded-xl bg-white shadow transition hover:shadow-xl" data-aos="fade-up" data-aos-delay="0">
-        <img src="assets/waziir/bidhan.png" alt="H.E. Abdullahi Bidhaan" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105">
-        <div class="absolute inset-x-0 bottom-0 bg-red-600 text-white px-4 py-3">
-          <h3 class="font-semibold leading-tight">H.E. Abdullahi Bidhaan</h3>
-          <p class="text-xs uppercase tracking-wide opacity-90">The Minister</p>
+    <!-- Row B (right -> left) -->
+    <div class="relative overflow-hidden mt-4 rounded-xl bg-white/10 ring-1 ring-white/20 group">
+      <div class="flex items-center gap-14 w-[200%] animate-marquee-r [animation-duration:32s] hover:[animation-play-state:paused]">
+        <!-- strip B -->
+        <div class="flex items-center gap-14 w-1/2 py-6 px-8">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=ADRA" alt="ADRA">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=ACTED" alt="ACTED">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=NCA" alt="NCA">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=Save+the+Children" alt="Save the Children">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=ALIGHT" alt="ALIGHT">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=SEA" alt="SEA">
         </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="group relative overflow-hidden rounded-xl bg-white shadow transition hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/waziir/deputy.png" alt="H.E. Ibrahim Mohamed" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105">
-        <div class="absolute inset-x-0 bottom-0 bg-red-600 text-white px-4 py-3">
-          <h3 class="font-semibold leading-tight">H.E. Ibrahim Mohamed</h3>
-          <p class="text-xs uppercase tracking-wide opacity-90">Deputy Minister</p>
+        <!-- duplicate B for seamless loop -->
+        <div class="flex items-center gap-14 w-1/2 py-6 px-8" aria-hidden="true">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=ADRA" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=ACTED" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=NCA" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=Save+the+Children" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=ALIGHT" alt="">
+          <img class="h-10" src="https://dummyimage.com/160x40/ffffff/2FA8E1&text=SEA" alt="">
         </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="group relative overflow-hidden rounded-xl bg-white shadow transition hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
-        <img src="assets/waziir/state-min.png" alt="H.E. Mohamed Abdullahi" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105">
-        <div class="absolute inset-x-0 bottom-0 bg-red-600 text-white px-4 py-3">
-          <h3 class="font-semibold leading-tight">H.E. Mohamed Abdullahi</h3>
-          <p class="text-xs uppercase tracking-wide opacity-90">State Minister</p>
-        </div>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="group relative overflow-hidden rounded-xl bg-white shadow transition hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
-        <img src="assets/waziir/the-dg-1.png" alt="Abdullahi Hassan Aden" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105">
-        <div class="absolute inset-x-0 bottom-0 bg-red-600 text-white px-4 py-3">
-          <h3 class="font-semibold leading-tight">Abdullahi Hassan Aden</h3>
-          <p class="text-xs uppercase tracking-wide opacity-90">Director General</p>
-        </div>
-      </article>
-    </div>
-
-    <!-- Partners -->
-    <div class="mt-12">
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
-        <img src="assets/logo/afdb-1.png" alt="AfDB" class="h-10 sm:h-12 mx-auto opacity-80 grayscale hover:opacity-100 hover:grayscale-0 transition" data-aos="fade-up" data-aos-delay="0">
-        <img src="assets/logo/SC_USA_Logo_RedBlack_Stacked-003.jpg" alt="UNDP" class="h-10 sm:h-12 mx-auto opacity-80 grayscale hover:opacity-100 hover:grayscale-0 transition" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/logo/undp-1.png" alt="UNICEF" class="h-10 sm:h-12 mx-auto opacity-80 grayscale hover:opacity-100 hover:grayscale-0 transition" data-aos="fade-up" data-aos-delay="200">
-        <img src="assets/logo/uniceff.png" alt="Save the Children" class="h-10 sm:h-12 mx-auto opacity-80 grayscale hover:opacity-100 hover:grayscale-0 transition" data-aos="fade-up" data-aos-delay="300">
-        <img src="assets/logo/uniceff.png" alt="World Bank" class="h-10 sm:h-12 mx-auto opacity-80 grayscale hover:opacity-100 hover:grayscale-0 transition" data-aos="fade-up" data-aos-delay="400">
       </div>
     </div>
   </div>
 </section>
+
+  <!-- SECTION 4: Complaint Response Mechanisms (CRM) -->
+  <section class="py-16 bg-brand/5">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="mb-8 flex items-end justify-between gap-4">
+        <h2 class="section-title">Complaint Response Mechanisms</h2>
+        <span class="pill">CRM</span>
+      </header>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-white rounded-xl p-6 shadow-brand">
+          <div class="text-4xl">☎️</div>
+          <p class="mt-2 font-semibold">Hotline</p>
+          <p class="text-slate-600">0349 6941</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-brand">
+          <div class="text-4xl">✉️</div>
+          <p class="mt-2 font-semibold">Whistleblowing</p>
+          <a class="text-brand hover:underline" href="mailto:whistleblowing@moewr-jubalandstate.so">whistleblowing@moewr-jubalandstate.so</a>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-brand">
+          <div class="text-4xl">📧</div>
+          <p class="mt-2 font-semibold">General Info</p>
+          <a class="text-brand hover:underline" href="mailto:info@moewr-jubalandstate.so">info@moewr-jubalandstate.so</a>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-brand">
+          <div class="text-4xl">📱</div>
+          <p class="mt-2 font-semibold">Phones</p>
+          <p class="text-slate-600">+252 61 560 5175</p>
+          <p class="text-slate-600">+252 61 939 3920</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Other Tools -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="mb-8">
+        <h2 class="section-title">Other Tools</h2>
+      </header>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Tool -->
+        <a href="#" class="group bg-white rounded-xl p-6 shadow-brand hover:shadow-lg transition">
+          <div class="text-4xl">📍</div>
+          <p class="mt-3 font-semibold group-hover:text-brand">Travel Request Form</p>
+        </a>
+        <a href="#" class="group bg-white rounded-xl p-6 shadow-brand hover:shadow-lg transition">
+          <div class="text-4xl">📊</div>
+          <p class="mt-3 font-semibold group-hover:text-brand">Ministry Reporting Template</p>
+        </a>
+        <a href="#" class="group bg-white rounded-xl p-6 shadow-brand hover:shadow-lg transition">
+          <div class="text-4xl">✉️</div>
+          <p class="mt-3 font-semibold group-hover:text-brand">Partner Registration Form</p>
+        </a>
+        <a href="#" class="group bg-white rounded-xl p-6 shadow-brand hover:shadow-lg transition">
+          <div class="text-4xl">👤</div>
+          <p class="mt-3 font-semibold group-hover:text-brand">Vendor Registration Form</p>
+        </a>
+        <a href="#" class="group bg-white rounded-xl p-6 shadow-brand hover:shadow-lg transition">
+          <div class="text-4xl">📝</div>
+          <p class="mt-3 font-semibold group-hover:text-brand">WASH Assessment Tool</p>
+        </a>
+        <a href="#" class="group bg-white rounded-xl p-6 shadow-brand hover:shadow-lg transition">
+          <div class="text-4xl">⚡</div>
+          <p class="mt-3 font-semibold group-hover:text-brand">Energy Assessment Tool</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Recent Blog Posts -->
+  <section class="py-16 bg-brand/5">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="mb-8 flex items-end justify-between">
+        <h2 class="section-title">Recent blog posts</h2>
+        <a href="#" class="text-brand hover:underline font-medium">View more</a>
+      </header>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Post -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-brand">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop" alt="">
+          <div class="p-6 space-y-3">
+            <h3 class="font-semibold text-lg">Tababarka sare & xirfadaha shaqaala…</h3>
+            <p class="text-slate-600 text-sm">Short intro to the article content goes here.</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-brand">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1200&auto=format&fit=crop" alt="">
+          <div class="p-6 space-y-3">
+            <h3 class="font-semibold text-lg">Booqasho Madaxweynaha Dowlada…</h3>
+            <p class="text-slate-600 text-sm">Field visit & community engagement update.</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-brand">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="">
+          <div class="p-6 space-y-3">
+            <h3 class="font-semibold text-lg">Kismaayo – Daahfurka Ceel biyood…</h3>
+            <p class="text-slate-600 text-sm">Project milestone delivered for water access.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Location & Working Hours -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="mb-8">
+        <h2 class="section-title">Location & Working Hours</h2>
+      </header>
+
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div class="space-y-4">
+          <div class="rounded-xl overflow-hidden ring-1 ring-slate-200">
+            <!-- Replace with your map embed -->
+            <iframe title="Map"
+              class="w-full h-64"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=49.175%2C-1.0%2C49.59%2C1.0&layer=mapnik"
+              loading="lazy"></iframe>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-brand">
+            <p class="font-semibold">Address</p>
+            <p class="text-slate-600">Wasaaradda Tamarta & Khayraadka Biyaha, Dowlada Jubaland.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-brand">
+          <h3 class="font-semibold text-lg mb-4">Working Hours</h3>
+          <ul class="divide-y divide-slate-200 text-sm">
+            <li class="py-3 flex justify-between"><span>Saturday</span><span>08:00 – 16:00</span></li>
+            <li class="py-3 flex justify-between bg-brand/5 rounded-md px-3"><span>Sunday</span><span class="text-brand font-medium">08:00 – 16:00 • Open now</span></li>
+            <li class="py-3 flex justify-between"><span>Monday</span><span>08:00 – 16:00</span></li>
+            <li class="py-3 flex justify-between"><span>Tuesday</span><span>08:00 – 16:00</span></li>
+            <li class="py-3 flex justify-between"><span>Wednesday</span><span>08:00 – 16:00</span></li>
+            <li class="py-3 flex justify-between"><span>Thursday</span><span>08:00 – 12:00</span></li>
+            <li class="py-3 flex justify-between"><span>Friday</span><span>Closed</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<!-- END MAIN=======================================END MAIN-=======================================END MAIN -->
 
 
 <!-- footer -->
