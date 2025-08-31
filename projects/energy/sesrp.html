@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOEWR Navigation Bilingual</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+<body class="font-sans">
+
+  <!-- Top Quick Link Bar -->
+  <div class="bg-[#0a1a3f] text-white flex justify-between items-center px-6 py-2 text-sm">
+    <a href="#" class="flex items-center space-x-1 hover:underline text-red-500 font-bold">
+      <span>🔗</span><span data-i18n="quickLink">QUICK LINK</span>
+    </a>
+
+    <div class="flex space-x-6 font-semibold uppercase">
+      <a href="#" data-i18n="eswg" class="hover:text-sky-400">ESWG</a>
+      <a href="#" data-i18n="forum" class="hover:text-sky-400">Forum</a>
+      <a href="#" data-i18n="affiliates" class="hover:text-sky-400">Affiliates</a>
+      <a href="#" data-i18n="platform" class="hover:text-sky-400">Electrification Platform</a>
+      <a href="#" data-i18n="stakeholders" class="hover:text-sky-400">Stakeholders</a>
+      <a href="#" data-i18n="grm" class="hover:text-sky-400">GRM</a>
+      <a href="#" data-i18n="jobs" class="hover:text-sky-400">Jobs</a>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="/assets/tamarta.png" alt="MOEWR Logo" class="h-20 w-20" />
+      </div>
+
+      <!-- Nav Links -->
+    <nav class="md:flex items-center space-x-4 font-sans font-semibold text-xl">
+  <a href="#" data-i18n="home" class="group inline-flex items-center gap-1 text-red-500 hover:text-sky-600">
+    <span>Home</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="about" href="#" data-i18n="about" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>About</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="depart" href="#" data-i18n="departments" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Departments</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="project" href="#" data-i18n="projects" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Projects</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="resources" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Resources</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="media" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Media</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="contact" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Contact</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+</nav>
+
+
+      <!-- Right Side -->
+      <div class="flex items-center space-x-6">
+        <a href="#" class="border border-sky-600 text-sky-600 px-4 py-2 rounded hover:bg-sky-50 font-medium" data-i18n="dashboard">
+          WSCF Dashboard
+        </a>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-500 hover:text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+        </button>
+
+        <!-- Language Toggle -->
+        <div class="flex space-x-2 ml-4">
+          <button onclick="setLanguage('en')" class="px-2 py-1 border rounded text-sm hover:bg-slate-100">EN</button>
+          <button onclick="setLanguage('so')" class="px-2 py-1 border rounded text-sm hover:bg-slate-100">SO</button>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- dropdowns -->
+
+<div id="aboutDrop" class="hidden absolute left-[290px] top-[130px] z-50 bg-[#2e98d4] border-sky-600 shadow-md p-5  h-[200px]  flex justify-center items-center space-y-3">
+
+  <ul class="space-y-3 font-bold text-xl">
+    <li class="hover:bg-white text-black px-2">Ministry</li>
+    <li id="ministerdrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Minister
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+    <li class="hover:bg-white text-black px-2">Director General</li>
+    <li class="hover:bg-white text-black px-2">Ministry Leadership</li>
+    <li class="hover:bg-white text-black px-2">Management Structure</li>
+  </ul>
+</div>
+<!-- minister dropdow -->
+<div id="minister" class=" hidden absolute left-[540px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md p-5  h-[170px]  flex justify-center items-center space-y-3">
+
+  <ul class="space-y-3 font-bold text-xl">
+    <li class="hover:bg-[#2e98d4] text-black px-2">Minister</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Deputy Minister</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">State Minister</li>
+  </ul>
+</div>
+<!-- end -->
+
+
+<!-- project dropdown -->
+
+<div id="projectDrop" class=" hidden absolute left-[440px] top-[140px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[150px]  h-[80px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="energyDrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Energy Sector
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+    <li id="waterdrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Water Sector
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+  </ul>
+</div>
+
+<!-- end project -->
+
+<!-- Energy sector -->
+
+<div id="enegrySector" class=" hidden absolute left-[585px] top-[160px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[150px]  h-[90px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/projects/energy/Hareact.html">SESRP</a>
+    </li>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/projects/energy/sesrp.html">HAREACT</a>
+    </li><br>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">TA</li>
+  </ul>
+</div>
+<!-- end energy sectior -->
+
+<!-- water sector -->
+<div id="waterSector" class=" hidden absolute left-[585px] top-[160px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[190px]  h-[180px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/kwsp.html">KWSP</a>
+    </li>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/Barwaaq.html">Barwaaqo pROJECT</a>
+    </li><br>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/SCRP_PROJECT.html">SCRP PROJECT</li></a>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/GW4R_PROJECT.html">HoA GW4R PROJECT</li></a>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/SCRP_PROJECT.html">KOBCIYE PROJECT</li></a>
+  </ul>
+</div>
+
+
+<!-- end sector -->
+
+<!-- departent dropdwon -->
+<div id="departDrop" class=" hidden absolute left-[340px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[120px] w-[250px]  h-[180px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+    <li class="hover:bg-[#2e98d4] text-black px-2">Energy</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Water</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Hydro-mdrology</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Policy and Planning</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Maintanance and Cordination</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Admin and Finance</li>
+  </ul>
+</div>
+
+<!-- end departent -->
+
+<!--end dropdowns -->
+ <!-- Hero Section -->
+
+
+
+ <!-- main ============================-->
+
+
+<section class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    
+    <!-- Left: Image -->
+    <div class="w-full">
+      <img src="/assets/sesrp/image1.png" 
+           alt="Consultation Workshop"
+           class="rounded-lg shadow-md object-cover w-full h-full">
+      <p class="mt-2 text-sm text-gray-600 text-center">
+        CONSULTATION WORKSHOP FOR VALIDATING THE CAPACITY NEEDS ASSESSMENT AND CAPACITY BUILDING STRATEGY REPORT
+      </p>
+    </div>
+
+    <!-- Right: Text -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Project Overview</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The Ministry of Energy and Water Resources is part of the Somali Electricity 
+        Sector Recovery Project (SESRP) which the Federal Government of Somalia and 
+        the Ministry of Energy and Water Resources is implementing. 
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The project development objective is to increase access to lower-cost and 
+        cleaner electricity supply in the project areas and to re-establish the 
+        electricity supply industry.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        The Project will be implemented across the entire Somalia peninsula, 
+        covering Southern Somalia (Banaadir, Jubbaland, South West State, 
+        Hiiraan & Shabelle and Galmuudud), Somaliland, and Puntland.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!--  -->
+<!-- PROJECT COMPONENTS -->
+<section class="bg-slate-50 py-14">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-10 items-stretch">
+
+    <!-- Left: Component list -->
+    <div class="space-y-5">
+      <!-- Item -->
+      <article class="bg-white border rounded-xl shadow-sm p-5 flex gap-4">
+        <div class="shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-sky-100 text-2xl">📈</div>
+        <div>
+          <h3 class="font-bold text-slate-800">COMPONENT 1</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Sub-transmission and distribution network reconstruction, reinforcement, and operations
+            efficiency in the major load centers of Mogadishu and Hargeisa.
+          </p>
+        </div>
+      </article>
+
+      <!-- Item -->
+      <article class="bg-white border rounded-xl shadow-sm p-5 flex gap-4">
+        <div class="shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-emerald-100 text-2xl">🔋</div>
+        <div>
+          <h3 class="font-bold text-slate-800">COMPONENT 2</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Hybridization and battery storage systems for mini-grids.
+          </p>
+        </div>
+      </article>
+
+      <!-- Item -->
+      <article class="bg-white border rounded-xl shadow-sm p-5 flex gap-4">
+        <div class="shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-sky-100 text-2xl">👥</div>
+        <div>
+          <h3 class="font-bold text-slate-800">COMPONENT 3</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Stand-alone solar off-grid access to public institutions (Health and Education).
+          </p>
+        </div>
+      </article>
+
+      <!-- Item -->
+      <article class="bg-white border rounded-xl shadow-sm p-5 flex gap-4">
+        <div class="shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-emerald-100 text-2xl">🎯</div>
+        <div>
+          <h3 class="font-bold text-slate-800">COMPONENT 4</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Institutional Development and Capacity Building.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Right: Title block with image overlay -->
+    <div class="relative rounded-2xl overflow-hidden shadow-md min-h-[360px]">
+      <!-- Background image (replace with your path) -->
+      <img src="images/power-lines.jpg" alt="Power infrastructure"
+           class="absolute inset-0 w-full h-full object-cover">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-slate-900/75"></div>
+      <!-- Content -->
+      <div class="relative h-full flex flex-col items-start justify-center p-10">
+        <h2 class="text-white text-4xl md:text-5xl font-extrabold tracking-tight">
+          PROJECT COMPONENTS
+        </h2>
+        <p class="text-sky-100 mt-4 text-lg">
+          Somali Electricity Sector Recovery Project
+        </p>
+        <p class="text-white/90 font-semibold">
+          ILAYS / SESRP
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!--  -->
+
+
+ <!-- OBJECTIVES & OUTCOMES -->
+<section class="bg-slate-50 py-14">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid gap-y-16 gap-x-16 md:grid-cols-2">
+
+      <!-- Project Development Objectives -->
+      <div>
+        <h3 class="text-sky-600 text-3xl md:text-4xl font-bold leading-tight"
+            data-i18n="pdo_title">
+          Project Development Objectives
+        </h3>
+        <p class="mt-5 text-sky-600/90 leading-relaxed max-w-prose"
+           data-i18n="pdo_text">
+          The objective is increased access to lower-cost electricity and to re-establish
+          the electricity supply industry, from diverse energy resources—especially
+          renewable energy resources.
+        </p>
+      </div>
+
+      <!-- Expected Outcome -->
+      <div>
+        <h3 class="text-sky-600 text-3xl md:text-4xl font-bold leading-tight"
+            data-i18n="expected_title">
+          Expected Outcome
+        </h3>
+        <p class="mt-5 text-sky-600/90 leading-relaxed max-w-prose"
+           data-i18n="expected_text">
+          The expected result of the project is to lay the foundation for national
+          interconnection, a National Grid, and a sustainable energy development landscape.
+        </p>
+      </div>
+
+      <!-- Sector Institutional -->
+      <div>
+        <h3 class="text-sky-600 text-3xl md:text-4xl font-bold leading-tight"
+            data-i18n="sector_title">
+          Sector Institutional
+        </h3>
+        <p class="mt-5 text-sky-600/90 leading-relaxed max-w-prose"
+           data-i18n="sector_text">
+          Sector institutional, legal, and regulatory enabling environment for sustained
+          sector operations, including enhancing both public and private capacity.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--  -->
+<section class="bg-slate-50 py-14">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <!-- Title -->
+    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-10">Achievements</h2>
+    
+    <!-- Grid -->
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-6xl mb-4 text-blue-600">📋</div>
+        <h3 class="font-bold text-xl text-slate-800">Capacity Need Assessment</h3>
+        <p class="text-slate-600 mt-2">
+          Capacity Need Assessment was conducted in all the Project Areas.
+        </p>
+        <p class="mt-3 font-semibold text-red-600">Done</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-6xl mb-4 text-green-500">🏥</div>
+        <h3 class="font-bold text-xl text-slate-800">Health Public Institutions Tender Process</h3>
+        <p class="text-slate-600 mt-2">
+          Tendering Process for the Health Public Institutions for Jubaland was done.
+        </p>
+        <p class="mt-3 font-semibold text-red-600">80% Done</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-6xl mb-4 text-yellow-500">🏫</div>
+        <h3 class="font-bold text-xl text-slate-800">Education Public Institutions Tender Process</h3>
+        <p class="text-slate-600 mt-2">
+          Tendering Process for the Education Public Institutions for Jubaland was done.
+        </p>
+        <p class="mt-3 font-semibold text-red-600">80% Done</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-6xl mb-4 text-purple-600">🤝</div>
+        <h3 class="font-bold text-xl text-slate-800">Community Engagement</h3>
+        <p class="text-slate-600 mt-2">
+          Community Engagement was conducted successfully.
+        </p>
+        <p class="mt-3 font-semibold text-red-600">Done</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-6xl mb-4 text-purple-600">👥</div>
+        <h3 class="font-bold text-xl text-slate-800">Capacity Need Assessment Validation Meeting</h3>
+        <p class="text-slate-600 mt-2">
+          Capacity Need Assessment Validation Meeting was conducted in Kismaayo.
+        </p>
+        <p class="mt-3 font-semibold text-red-600">Done</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--  -->
+<section class="bg-brand-blue text-white py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Project Stakeholders</h2>
+    <p class="text-brand-light mb-12">
+      The Project is funded by the World Bank, supported by the Federal Ministry, 
+      and implemented by MOEWR Jubaland.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/logo/undp-1.png" class="h-24 mx-auto mb-4" alt="World Bank">
+        <h3 class="text-xl font-semibold text-brand-dark">Funded By</h3>
+        <p class="text-slate-600">World Bank</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/tamarta.png" class="h-24 mx-auto mb-4" alt="Federal Ministry">
+        <h3 class="text-xl font-semibold text-brand-dark">Supported By</h3>
+        <p class="text-slate-600">Federal Ministry of Energy & Water Resources</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/tamarta.png" class="h-24 mx-auto mb-4" alt="MOEWR Jubaland">
+        <h3 class="text-xl font-semibold text-brand-dark">Implemented By</h3>
+        <p class="text-slate-600">MOEWR Jubaland State of Somalia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end main -->
+<!-- footer -->
+ <footer class="bg-slate-900 text-slate-200">
+  <!-- Top mini-nav -->
+  <div class="border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto flex flex-col gap-3 sm:flex-row items-center justify-between px-4 py-3 text-sm">
+      <nav class="flex flex-wrap gap-x-6 gap-y-2">
+        <a href="#" class="hover:text-sky-400 transition">About</a>
+        <a href="#" class="hover:text-sky-400 transition">Departments</a>
+        <a href="#" class="hover:text-sky-400 transition">Events</a>
+        <a href="#" class="hover:text-sky-400 transition">News</a>
+        <a href="#" class="hover:text-sky-400 transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <span class="text-slate-400">Follow us</span>
+        <a href="#" aria-label="Facebook" class="p-1.5 rounded-full bg-slate-800 hover:bg-sky-600 transition">
+          <!-- Facebook -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M22 12.06C22 6.53 17.52 2 12 2S2 6.53 2 12.06c0 5.02 3.66 9.19 8.44 9.94v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.5-3.88 3.78-3.88 1.1 0 2.25.2 2.25.2v2.46h-1.27c-1.25 0-1.64.78-1.64 1.58v1.9h2.79l-.45 2.9h-2.34V22c4.78-.75 8.44-4.92 8.44-9.94z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="p-1.5 rounded-full bg-slate-800 hover:bg-sky-500 transition">
+          <!-- Twitter/X -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M3 3l7.2 9.6L3.5 21h2.2l5.7-6.6 4.6 6.6H21l-7.6-10.9L20.3 3h-2.2l-5.2 6-4.2-6H3z"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="p-1.5 rounded-full bg-slate-800 hover:bg-red-600 transition">
+          <!-- YouTube -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M23.5 7.1a3.4 3.4 0 0 0-2.4-2.4C19.2 4 12 4 12 4s-7.2 0-9.1.7A3.4 3.4 0 0 0 .5 7.1 35 35 0 0 0 0 12a35 35 0 0 0 .5 4.9 3.4 3.4 0 0 0 2.4 2.4C4.8 20 12 20 12 20s7.2 0 9.1-.7a3.4 3.4 0 0 0 2.4-2.4A35 35 0 0 0 24 12a35 35 0 0 0-.5-4.9zM9.8 15.3V8.7L15.8 12l-6 3.3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main columns -->
+  <div class="relative">
+    <!-- subtle background overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800"></div>
+
+    <div class="relative max-w-7xl mx-auto grid gap-10 md:grid-cols-3 px-4 py-12">
+      <!-- Column 1: MoEWR contact -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">MoEWR</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-300">
+          <span class="font-medium">Address:</span> Bondhere District, Mogadishu, Somalia.
+        </p>
+
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <!-- clock -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-sky-400"><path fill="currentColor" d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm1 11h5v-2h-4V7h-2v6Z"/></svg>
+            <span><span class="text-slate-400">Opening Hours:</span> Sat–Thu: 8:00 am – 6:00 pm</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <!-- phone -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-sky-400"><path fill="currentColor" d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .4 2 .6 3.1.6.7 0 1.3.6 1.3 1.3V20c0 .7-.6 1.3-1.3 1.3C9.8 21.3 2.7 14.2 2.7 5.3 2.7 4.6 3.3 4 4 4h3.1c.7 0 1.3.6 1.3 1.3 0 1.1.2 2.1.6 3.1.1.4 0 .9-.3 1.2l-2.1 2.2Z"/></svg>
+            <span>Phone: +252 00 000000</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <!-- mail -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-sky-400"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
+            <span>Email: <a href="mailto:info@moewr.gov.so" class="hover:text-sky-400 underline decoration-slate-600">info@moewr.gov.so</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: MoEWR FMS -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">MoEWR FMS</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#" class="group flex items-start gap-2 hover:text-sky-400">
+            <span class="text-sky-400">›</span><span>MoEWR Puntland</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-sky-400">
+            <span class="text-sky-400">›</span><span>MOEM – Somaliland</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-sky-400">
+            <span class="text-sky-400">›</span><span>MOEWR – Southwest State of Somalia</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-sky-400">
+            <span class="text-sky-400">›</span><span>MOEWR – Galmudug</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-sky-400">
+            <span class="text-sky-400">›</span><span>MOEWR – Jubaland State</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Useful Links -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">Useful Links</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#" class="flex items-start gap-2 hover:text-sky-400"><span class="text-sky-400">›</span><span>Office of the President</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-sky-400"><span class="text-sky-400">›</span><span>OPM</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-sky-400"><span class="text-sky-400">›</span><span>Ministry of Planning</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-sky-400"><span class="text-sky-400">›</span><span>Environment &amp; Climate Change</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-sky-400"><span class="text-sky-400">›</span><span>Ministry of Petroleum &amp; Mineral</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 py-4 text-center text-xs text-slate-400">
+      Ministry of Energy &amp; Water Resources © 2023. All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+<!-- Counter Script -->
+<script>
+  function animateCounter(counter) {
+    const target = +counter.getAttribute("data-target");
+    const speed = 200; // smaller = faster
+    let count = 0;
+
+    const updateCount = () => {
+      const increment = Math.ceil(target / speed);
+      if (count < target) {
+        count += increment;
+        counter.textContent = count;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    updateCount();
+  }
+
+  // Run counter when in viewport
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target); // run once
+      }
+    });
+  }, { threshold: 0.6 });
+
+  document.querySelectorAll(".counter").forEach(counter => {
+    counterObserver.observe(counter);
+  });
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,       // animation duration (ms)
+    easing: 'ease-out',  // easing curve
+    once: true,          // run only once
+  });
+</script>
+
+
+
+
+  <!-- Language Dictionary -->
+ <script src="/js/about.js"></script>
+ <script src="/js/main.js"></script>
+
+</body>
+</html>

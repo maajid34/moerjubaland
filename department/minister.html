@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOEWR Navigation Bilingual</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root{
+      /* MOEWR logo band blue */
+      --brand:#2FA8E1;
+      --brand-dark:#0d7cb0;
+      --ink:#0f172a;
+    }
+  </style>
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Top Quick Link Bar -->
+ <div class="bg-[var(--brand)] text-white flex justify-between items-center px-6 py-2 text-sm">
+  <a href="#" class="flex items-center space-x-1 hover:underline text-[#E63946] font-bold">
+    <span>🔗</span><span data-i18n="quickLink">QUICK LINK</span>
+  </a>
+
+  <div class="flex space-x-6 font-semibold uppercase">
+    <a href="#" data-i18n="eswg" class="hover:text-[#2FA8E1]">ESWG</a>
+    <a href="#" data-i18n="forum" class="hover:text-[#2FA8E1]">Forum</a>
+    <a href="#" data-i18n="affiliates" class="hover:text-[#2FA8E1]">Affiliates</a>
+    <a href="#" data-i18n="platform" class="hover:text-[#2FA8E1]">Electrification Platform</a>
+    <a href="#" data-i18n="stakeholders" class="hover:text-[#2FA8E1]">Stakeholders</a>
+    <a href="#" data-i18n="grm" class="hover:text-[#2FA8E1]">GRM</a>
+    <a href="#" data-i18n="jobs" class="hover:text-[#2FA8E1]">Jobs</a>
+  </div>
+</div>
+
+
+  <!-- Main Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="/assets/tamarta.png" alt="MOEWR Logo" class="h-20 w-20" />
+      </div>
+
+      <!-- Nav Links -->
+    <nav class="md:flex items-center space-x-4 font-sans font-semibold text-xl">
+  <a href="/index.html" data-i18n="home" class="group inline-flex items-center gap-1 text-red-500 hover:text-sky-600">
+    <span>Home</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="about" href="#" data-i18n="about" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>About</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="depart" href="#" data-i18n="departments" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Departments</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a id="project" href="#" data-i18n="projects" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Projects</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="resources" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Resources</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="media" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Media</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <a href="#" data-i18n="contact" class="group inline-flex items-center gap-1 hover:text-sky-600">
+    <span>Contact</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+</nav>
+
+
+      <!-- Right Side -->
+      <div class="flex items-center space-x-6">
+        <a href="#" class="border border-sky-600 text-sky-600 px-4 py-2 rounded hover:bg-sky-50 font-medium" data-i18n="dashboard">
+          WSCF Dashboard
+        </a>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-500 hover:text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+        </button>
+
+        <!-- Language Toggle -->
+        <div class="flex space-x-2 ml-4">
+          <button onclick="setLanguage('en')" class="px-2 py-1 border rounded text-sm hover:bg-slate-100">EN</button>
+          <button onclick="setLanguage('so')" class="px-2 py-1 border rounded text-sm hover:bg-slate-100">SO</button>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- dropdowns -->
+
+<div id="aboutDrop" class="hidden absolute left-[290px] top-[130px] z-50 bg-[#2e98d4] border-sky-600 shadow-md p-5  h-[200px]  flex justify-center items-center space-y-3">
+
+  <ul class="space-y-3 font-bold text-xl">
+    <li class="hover:bg-white text-black px-2">Ministry</li>
+    <li id="ministerdrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Minister
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+    <li class="hover:bg-white text-black px-2">Director General</li>
+    <li class="hover:bg-white text-black px-2">Ministry Leadership</li>
+    <li class="hover:bg-white text-black px-2">Management Structure</li>
+  </ul>
+</div>
+<!-- minister dropdow -->
+<div id="minister" class=" hidden absolute left-[540px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md p-5  h-[170px]  flex justify-center items-center space-y-3">
+
+  <ul class="space-y-3 font-bold text-xl">
+    <li class="hover:bg-[#2e98d4] text-black px-2">Minister</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Deputy Minister</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">State Minister</li>
+  </ul>
+</div>
+<!-- end -->
+
+
+<!-- project dropdown -->
+
+<div id="projectDrop" class=" hidden absolute left-[440px] top-[140px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[150px]  h-[80px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="energyDrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Energy Sector
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+    <li id="waterdrop" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">Water Sector
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+    </svg>
+    </li>
+  </ul>
+</div>
+
+<!-- end project -->
+
+<!-- Energy sector -->
+
+<div id="enegrySector" class=" hidden absolute left-[585px] top-[160px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[150px]  h-[90px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/projects/energy/Hareact.html">SESRP</a>
+    </li>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/projects/energy/sesrp.html">HAREACT</a>
+    </li><br>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600">TA</li>
+  </ul>
+</div>
+<!-- end energy sectior -->
+
+<!-- water sector -->
+<div id="waterSector" class=" hidden absolute left-[585px] top-[160px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[30px] w-[190px]  h-[180px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+     <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/kwsp.html">KWSP</a>
+    </li>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/Barwaaq.html">Barwaaqo pROJECT</a>
+    </li><br>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/SCRP_PROJECT.html">SCRP PROJECT</li></a>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/GW4R_PROJECT.html">HoA GW4R PROJECT</li></a>
+    <li id="" class="hover:bg-white text-black px-2 group inline-flex items-center gap-1 hover:text-sky-600"><a href="/project/water/SCRP_PROJECT.html">KOBCIYE PROJECT</li></a>
+  </ul>
+</div>
+
+
+<!-- end sector -->
+
+<!-- departent dropdwon -->
+<div id="departDrop" class=" hidden absolute left-[340px] top-[170px] z-50 bg-[#fff] border-sky-600 shadow-md  py-[120px] w-[250px]  h-[180px]  flex justify-center items-center space-y-3">
+
+  <ul  class="space-y-3 font-bold  ">
+    <li class="hover:bg-[#2e98d4] text-black px-2">Energy</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Water</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Hydro-mdrology</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Policy and Planning</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Maintanance and Cordination</li>
+    <li class="hover:bg-[#2e98d4] text-black px-2">Admin and Finance</li>
+  </ul>
+</div>
+
+<!-- end departent -->
+
+<!--end dropdowns -->
+ <!-- Hero Section -->
+
+
+
+ <!-- main ============================-->
+
+
+ 
+<section class="relative py-16 bg-white">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+    <!-- Left: Ministry Building Image -->
+    <img src="/assets/department/image1.png" 
+         alt="MOEWR Jubaland Headquarters" 
+         class="rounded-2xl shadow-lg border-4 border-[var(--brand)]" />
+
+    <!-- Right: About Us Content -->
+    <div>
+      <h2 class="text-4xl font-extrabold text-[var(--brand)] mb-4">About Us</h2>
+      <p class="text-lg font-semibold text-[var(--brand)] mb-3">
+        Welcome to the Ministry of Energy & Water Resources of Jubaland.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Ministry of Energy & Water Resources is one among the Jubaland State Ministries
+        established in 2014 with responsibility for two core sectors: 
+        <span class="font-medium text-[var(--brand-dark)]">Water Resources</span> and 
+        <span class="font-medium text-[var(--brand-dark)]">Energy</span>.
+        The ministry ensures equitable development, exploration, and distribution 
+        of energy and water to the people of Jubaland.
+      </p>
+      <p class="text-slate-700 leading-relaxed">
+        The Ministry is responsible for the formulation, direction, and coordination of state 
+        energy and water resources. It is tasked with creating institutions that manage water 
+        resources and deliver energy and water services for the benefit of Jubaland communities.
+      </p>
+    </div>
+  </div>
+</section>
+ 
+  <!--  -->
+<!-- Vision & Mission (brand: #2FA8E1) -->
+<section class="py-16 bg-[#2FA8E1]/10">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- Vision -->
+      <article class="rounded-2xl bg-white shadow-sm border border-[#2FA8E1]/30 p-8">
+        <div class="flex items-center gap-2 text-sm font-semibold text-[#0A7FB8]">
+          <span class="inline-block w-2 h-2 rounded-full bg-[#2FA8E1]"></span>
+          Our Vision
+        </div>
+        <h3 class="mt-2 text-3xl font-extrabold text-[#2FA8E1]">Our Vision</h3>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          To provide adequate, safe and affordable water, hygiene and sanitation for all.
+          An energy industry that contributes to revenue streams and the socio-economic
+          development of the state.
+        </p>
+      </article>
+
+      <!-- Mission -->
+      <article class="rounded-2xl bg-white shadow-sm border border-[#2FA8E1]/30 p-8">
+        <div class="flex items-center gap-2 text-sm font-semibold text-[#0A7FB8]">
+          <span class="inline-block w-2 h-2 rounded-full bg-[#2FA8E1]"></span>
+          Our Mission
+        </div>
+        <h3 class="mt-2 text-3xl font-extrabold text-[#2FA8E1]">Our Mission</h3>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          To have a significant role in the socio-economic development of the people of
+          Jubbaland State of Somalia through development and management of its water and
+          energy resources in a sustainable manner; through provision of quality and
+          equitable supplies in the entire state and by contributing significantly to food
+          security and increased resilience to drought and natural disaster.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!--  -->
+<!-- Ministry Mandates (brand #2FA8E1) -->
+<section class="py-16 bg-[#2FA8E1]/5">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#2FA8E1]">
+      Ministry Mandates
+    </h2>
+    <div class="mt-2 h-1 w-24 mx-auto rounded bg-[#2FA8E1]"></div>
+
+    <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- 1 -->
+      <article class="group rounded-2xl bg-white border border-[#2FA8E1]/30 p-6 shadow-sm hover:shadow-md transition">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex h-6 px-2 items-center rounded-full text-xs font-semibold bg-[#2FA8E1]/10 text-[#2FA8E1]">1</span>
+          <span class="sr-only">Regulate & Set Policy</span>
+        </div>
+        <div class="mt-4">
+          <!-- icon: policy -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-14 h-14 text-[#2FA8E1]">
+            <path fill="currentColor" d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm9 1.5V8h5.5L15 3.5ZM8 10h8v2H8v-2Zm0 4h8v2H8v-2Z"/>
+          </svg>
+          <h3 class="mt-4 font-semibold text-slate-900">
+            Regulate & Set policy for Energy & Water Resources sectors
+          </h3>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="group rounded-2xl bg-white border border-[#2FA8E1]/30 p-6 shadow-sm hover:shadow-md transition">
+        <span class="inline-flex h-6 px-2 items-center rounded-full text-xs font-semibold bg-[#2FA8E1]/10 text-[#2FA8E1]">2</span>
+        <div class="mt-4">
+          <!-- icon: implement -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-14 h-14 text-[#2FA8E1]">
+            <path fill="currentColor" d="M3 5h18v12H3V5Zm2 2v8h14V7H5Zm-2 12h18v2H3v-2Zm9-8a3 3 0 1 1-.001 6.001A3 3 0 0 1 12 11Zm0-6 2 3H10l2-3Z"/>
+          </svg>
+          <h3 class="mt-4 font-semibold text-slate-900">
+            Implement & Facilitate development of the Energy & Water sectors
+          </h3>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="group rounded-2xl bg-white border border-[#2FA8E1]/30 p-6 shadow-sm hover:shadow-md transition">
+        <span class="inline-flex h-6 px-2 items-center rounded-full text-xs font-semibold bg-[#2FA8E1]/10 text-[#2FA8E1]">3</span>
+        <div class="mt-4">
+          <!-- icon: monitoring -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-14 h-14 text-[#2FA8E1]">
+            <path fill="currentColor" d="M3 3h2v16h16v2H3V3Zm6 12 3-4 3 3 4-5 2 2-6 7-3-3-3 3-2-3Z"/>
+          </svg>
+          <h3 class="mt-4 font-semibold text-slate-900">
+            Provide Monitoring & Evaluation for sectoral activities
+          </h3>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="group rounded-2xl bg-white border border-[#2FA8E1]/30 p-6 shadow-sm hover:shadow-md transition">
+        <span class="inline-flex h-6 px-2 items-center rounded-full text-xs font-semibold bg-[#2FA8E1]/10 text-[#2FA8E1]">4</span>
+        <div class="mt-4">
+          <!-- icon: access -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-14 h-14 text-[#2FA8E1]">
+            <path fill="currentColor" d="M4 3h16v14H4V3Zm2 2v10h12V5H6Zm-2 14h16v2H4v-2Zm7-11h2v3h3v2h-3v3h-2v-3H8v-2h3V8Z"/>
+          </svg>
+          <h3 class="mt-4 font-semibold text-slate-900">
+            Ensure access to reliable clean energy, water resources & sewerage for society
+          </h3>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="group rounded-2xl bg-white border border-[#2FA8E1]/30 p-6 shadow-sm hover:shadow-md transition">
+        <span class="inline-flex h-6 px-2 items-center rounded-full text-xs font-semibold bg-[#2FA8E1]/10 text-[#2FA8E1]">5</span>
+        <div class="mt-4">
+          <!-- icon: promote -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-14 h-14 text-[#2FA8E1]">
+            <path fill="currentColor" d="M12 6a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm0 2a4 4 0 1 0 .001 8.001A4 4 0 0 0 12 8Zm-1-6h2v3h-2V2Zm8.485 3.515 1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121ZM2 11h3v2H2v-2Zm16.364 6.95 2.121 2.121-1.414 1.414-2.121-2.121 1.414-1.414Z"/>
+          </svg>
+          <h3 class="mt-4 font-semibold text-slate-900">
+            Promote development of water & energy resources
+          </h3>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="group rounded-2xl bg-white border border-[#2FA8E1]/30 p-6 shadow-sm hover:shadow-md transition">
+        <span class="inline-flex h-6 px-2 items-center rounded-full text-xs font-semibold bg-[#2FA8E1]/10 text-[#2FA8E1]">6</span>
+        <div class="mt-4">
+          <!-- icon: funding -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-14 h-14 text-[#2FA8E1]">
+            <path fill="currentColor" d="M12 1 3 5v6c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V5l-9-4Zm1 16.9V20h-2v-2.1a4 4 0 0 1-3-3.9h2a2 2 0 0 0 4 0c0-.9-.6-1.6-2-2-2.7-.7-4-1.9-4-4 0-2 1.5-3.4 3-3.8V4h2v2.2c1.5.4 3 1.6 3 3.8h-2c0-1.2-.8-2-2-2s-2 .6-2 1.7c0 .8.5 1.4 2 1.8 2.7.7 4 2 4 4.3a4 4 0 0 1-3 3.9Z"/>
+          </svg>
+          <h3 class="mt-4 font-semibold text-slate-900">
+            Enhance resources mobilization for sectoral funding
+          </h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+
+
+<!-- Departments Section -->
+<section class="py-16 bg-[#2FA8E1]/5">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#2FA8E1]">
+      Departments
+    </h2>
+    <div class="h-1 w-24 mx-auto mt-2 rounded bg-[#2FA8E1]"></div>
+
+    <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      
+      <!-- Admin HR & Finance -->
+      <article
+        class="group bg-white rounded-2xl shadow-md border border-[#2FA8E1]/30 p-6 hover:shadow-xl transition transform hover:-translate-y-2 hover:border-[#2FA8E1]"
+      >
+        <h3 class="text-xl font-semibold text-[#2FA8E1] group-hover:text-[#0A7FB8] transition">
+          Admin, HR & Finance
+        </h3>
+        <p class="mt-3 text-slate-700 text-sm leading-relaxed">
+          Backbone of the ministry, ensuring administration & financial support for all departments of MoEWR.
+        </p>
+        <button
+          class="mt-5 px-4 py-2 rounded-lg bg-[#2FA8E1] text-white text-sm font-medium hover:bg-[#0A7FB8] transition"
+        >
+          Read More
+        </button>
+      </article>
+
+      <!-- Water Department -->
+      <article
+        class="group bg-white rounded-2xl shadow-md border border-[#2FA8E1]/30 p-6 hover:shadow-xl transition transform hover:-translate-y-2 hover:border-[#2FA8E1]"
+      >
+        <h3 class="text-xl font-semibold text-[#2FA8E1] group-hover:text-[#0A7FB8] transition">
+          Water Department
+        </h3>
+        <p class="mt-3 text-slate-700 text-sm leading-relaxed">
+          Oversees equitable water supply across Jubaland districts; implements sand dams, boreholes, and water harvesting systems.
+        </p>
+        <button
+          class="mt-5 px-4 py-2 rounded-lg bg-[#2FA8E1] text-white text-sm font-medium hover:bg-[#0A7FB8] transition"
+        >
+          Read More
+        </button>
+      </article>
+
+      <!-- Energy Department -->
+      <article
+        class="group bg-white rounded-2xl shadow-md border border-[#2FA8E1]/30 p-6 hover:shadow-xl transition transform hover:-translate-y-2 hover:border-[#2FA8E1]"
+      >
+        <h3 class="text-xl font-semibold text-[#2FA8E1] group-hover:text-[#0A7FB8] transition">
+          Energy Department
+        </h3>
+        <p class="mt-3 text-slate-700 text-sm leading-relaxed">
+          Develops the state’s energy sector, ensuring affordable & reliable energy supply at low tariffs for communities.
+        </p>
+        <button
+          class="mt-5 px-4 py-2 rounded-lg bg-[#2FA8E1] text-white text-sm font-medium hover:bg-[#0A7FB8] transition"
+        >
+          More Info
+        </button>
+      </article>
+
+      <!-- Planning & Policy -->
+      <article
+        class="group bg-white rounded-2xl shadow-md border border-[#2FA8E1]/30 p-6 hover:shadow-xl transition transform hover:-translate-y-2 hover:border-[#2FA8E1]"
+      >
+        <h3 class="text-xl font-semibold text-[#2FA8E1] group-hover:text-[#0A7FB8] transition">
+          Planning & Policy
+        </h3>
+        <p class="mt-3 text-slate-700 text-sm leading-relaxed">
+          Conducts research, policy-making, and monitoring to guide energy & water development in Jubaland.
+        </p>
+        <button
+          class="mt-5 px-4 py-2 rounded-lg bg-[#2FA8E1] text-white text-sm font-medium hover:bg-[#0A7FB8] transition"
+        >
+          Read More
+        </button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+
+<section class="py-16 bg-[var(--brand)]/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[var(--brand)]">Departments</h2>
+      <div class="h-1 w-24 bg-[var(--brand)] mx-auto mt-2 rounded"></div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Card -->
+        <article class="group rounded-2xl bg-white p-6 border border-[var(--brand)]/30 shadow-sm hover:shadow-xl transition hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-[var(--brand)] group-hover:text-[var(--brand-dark)]">Admin, HR & Finance</h3>
+          <p class="mt-3 text-sm leading-relaxed">
+            Provides administration and financial support, drives internal policy and governance for all directorates.
+          </p>
+          <a class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white bg-[var(--brand)] hover:bg-[var(--brand-dark)] px-4 py-2 rounded-lg transition" href="#">
+            Read more
+          </a>
+        </article>
+
+        <article class="group rounded-2xl bg-white p-6 border border-[var(--brand)]/30 shadow-sm hover:shadow-xl transition hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-[var(--brand)] group-hover:text-[var(--brand-dark)]">Water Department</h3>
+          <p class="mt-3 text-sm leading-relaxed">
+            Plans and delivers equitable water supply: boreholes, sand dams, storage and rural water systems across districts.
+          </p>
+          <a class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white bg-[var(--brand)] hover:bg-[var(--brand-dark)] px-4 py-2 rounded-lg transition" href="#">
+            Read more
+          </a>
+        </article>
+
+        <article class="group rounded-2xl bg-white p-6 border border-[var(--brand)]/30 shadow-sm hover:shadow-xl transition hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-[var(--brand)] group-hover:text-[var(--brand-dark)]">Energy Department</h3>
+          <p class="mt-3 text-sm leading-relaxed">
+            Develops the energy sector and improves access to reliable, affordable electricity for communities.
+          </p>
+          <a class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white bg-[var(--brand)] hover:bg-[var(--brand-dark)] px-4 py-2 rounded-lg transition" href="#">
+            More info
+          </a>
+        </article>
+
+        <article class="group rounded-2xl bg-white p-6 border border-[var(--brand)]/30 shadow-sm hover:shadow-xl transition hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-[var(--brand)] group-hover:text-[var(--brand-dark)]">Planning & Policy</h3>
+          <p class="mt-3 text-sm leading-relaxed">
+            Leads research, monitoring & evaluation, policy and regulatory frameworks for energy and water sectors.
+          </p>
+          <a class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white bg-[var(--brand)] hover:bg-[var(--brand-dark)] px-4 py-2 rounded-lg transition" href="#">
+            Read more
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2) MINISTRY ACHIEVEMENTS ============ -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[var(--brand)]">Ministry Achievements in Summary</h2>
+      <div class="h-1 w-24 bg-[var(--brand)] mx-auto mt-2 rounded"></div>
+
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- metric item -->
+        <div class="text-center">
+          <div class="mx-auto h-16 w-16 rounded-2xl bg-[var(--brand)]/10 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-[var(--brand)]"><path fill="currentColor" d="M7 2h10l2 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V2Zm2 6h6v2H9V8Zm0 4h6v2H9v-2Zm0 4h6v2H9v-2Z"/></svg>
+          </div>
+          <p class="mt-4 font-semibold">10 MW</p>
+          <p class="text-sm text-slate-600">Added renewable capacity to the grid.</p>
+          <a href="#" class="mt-3 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Learn more</a>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-16 w-16 rounded-2xl bg-[var(--brand)]/10 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-[var(--brand)]"><path fill="currentColor" d="M12 12a5 5 0 1 1 .001-9.999A5 5 0 0 1 12 12Zm-9 9a9 9 0 0 1 18 0H3Z"/></svg>
+          </div>
+          <p class="mt-4 font-semibold">500,000 People</p>
+          <p class="text-sm text-slate-600">Gained access to safe water.</p>
+          <a href="#" class="mt-3 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Learn more</a>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-16 w-16 rounded-2xl bg-[var(--brand)]/10 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-[var(--brand)]"><path fill="currentColor" d="M4 4h16v4H4V4Zm0 6h10v4H4v-4Zm0 6h16v4H4v-4Z"/></svg>
+          </div>
+          <p class="mt-4 font-semibold">20 Projects Completed</p>
+          <p class="text-sm text-slate-600">Energy & water initiatives across districts.</p>
+          <a href="#" class="mt-3 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Learn more</a>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-16 w-16 rounded-2xl bg-[var(--brand)]/10 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-[var(--brand)]"><path fill="currentColor" d="M9 21V8l12-3v13l-12 3ZM7 8H3v13h4V8Z"/></svg>
+          </div>
+          <p class="mt-4 font-semibold">2,000 Streetlights</p>
+          <p class="text-sm text-slate-600">Installed across nine districts.</p>
+          <a href="#" class="mt-3 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Learn more</a>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-16 w-16 rounded-2xl bg-[var(--brand)]/10 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-[var(--brand)]"><path fill="currentColor" d="M6 2h12v6H6V2Zm-2 8h16v12H4V10Zm4 2v8h8v-8H8Z"/></svg>
+          </div>
+          <p class="mt-4 font-semibold">92 Boreholes</p>
+          <p class="text-sm text-slate-600">Constructed/rehabilitated in two regions.</p>
+          <a href="#" class="mt-3 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Contact us</a>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-16 w-16 rounded-2xl bg-[var(--brand)]/10 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-[var(--brand)]"><path fill="currentColor" d="M12 3 4 7v14h16V7l-8-4Zm0 2.2L17.5 8H6.5L12 5.2ZM6 10h12v9H6v-9Z"/></svg>
+          </div>
+          <p class="mt-4 font-semibold">226 Water Kiosks</p>
+          <p class="text-sm text-slate-600">Serving communities across 12 districts.</p>
+          <a href="#" class="mt-3 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3) OUR SERVICES ============ -->
+  <section class="py-16 bg-[var(--brand)]/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[var(--brand)]">Our Services</h2>
+      <div class="h-1 w-24 bg-[var(--brand)] mx-auto mt-2 rounded"></div>
+
+      <div class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Service item -->
+        <div>
+          <img src="assets/img/service-policy.jpg" alt="Energy policy planning" class="w-full rounded-xl object-cover aspect-[4/3] shadow" />
+          <h3 class="mt-4 font-semibold">Energy Policy Planning</h3>
+          <p class="text-sm text-slate-600">Forward-thinking energy policies for sustainable development.</p>
+        </div>
+        <div>
+          <img src="assets/img/service-resource.jpg" alt="Resource management" class="w-full rounded-xl object-cover aspect-[4/3] shadow" />
+          <h3 class="mt-4 font-semibold">Resource Management</h3>
+          <p class="text-sm text-slate-600">Strategies for effective and balanced natural resource use.</p>
+        </div>
+        <div>
+          <img src="assets/img/service-water.jpg" alt="Water supply solutions" class="w-full rounded-xl object-cover aspect-[4/3] shadow" />
+          <h3 class="mt-4 font-semibold">Water Supply Solutions</h3>
+          <p class="text-sm text-slate-600">Reliable water systems for communities and institutions.</p>
+        </div>
+        <div>
+          <img src="assets/img/service-renewable.jpg" alt="Renewable energy projects" class="w-full rounded-xl object-cover aspect-[4/3] shadow" />
+          <h3 class="mt-4 font-semibold">Renewable Energy Projects</h3>
+          <p class="text-sm text-slate-600">Solar, wind and hydro initiatives to expand clean energy.</p>
+        </div>
+        <div>
+          <img src="assets/img/service-infra.jpg" alt="Infrastructure development" class="w-full rounded-xl object-cover aspect-[4/3] shadow" />
+          <h3 class="mt-4 font-semibold">Infrastructure Development</h3>
+          <p class="text-sm text-slate-600">Design & implementation of efficient energy and water infrastructure.</p>
+        </div>
+        <div>
+          <img src="assets/img/service-training.jpg" alt="Community training" class="w-full rounded-xl object-cover aspect-[4/3] shadow" />
+          <h3 class="mt-4 font-semibold">Community Training Programs</h3>
+          <p class="text-sm text-slate-600">Training on sustainable energy practices and water conservation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4) MINISTRY OFFICIALS ============ -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[var(--brand)]">Ministry Officials</h2>
+      <div class="h-1 w-24 bg-[var(--brand)] mx-auto mt-2 rounded"></div>
+
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Official card -->
+        <article class="rounded-2xl border border-[var(--brand)]/30 bg-white shadow-sm overflow-hidden">
+          <img src="assets/img/official-1.jpg" alt="Minister portrait" class="w-full aspect-[4/3] object-cover" />
+          <div class="p-5">
+            <h3 class="text-[var(--brand)] font-semibold underline decoration-[var(--brand)]/30">H.E. Ahmed H. Baraki</h3>
+            <p class="text-sm mt-1">Minister of Energy & Water Resources – Jubaland</p>
+            <p class="text-xs text-slate-600 mt-2">Email: <a href="mailto:minister.moewr@jubalandstate.so" class="text-[var(--brand)] hover:text-[var(--brand-dark)]">minister.moewr@jubalandstate.so</a></p>
+            <a href="#" class="mt-4 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Facebook</a>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-[var(--brand)]/30 bg-white shadow-sm overflow-hidden">
+          <img src="assets/img/official-2.jpg" alt="Deputy Minister portrait" class="w-full aspect-[4/3] object-cover" />
+          <div class="p-5">
+            <h3 class="text-[var(--brand)] font-semibold underline decoration-[var(--brand)]/30">H.E. Mustafe Haji Mohamed</h3>
+            <p class="text-sm mt-1">Deputy Minister, MOEWR – Jubaland</p>
+            <p class="text-xs text-slate-600 mt-2">Email: <a href="mailto:deputyminister-moemw@jubalandstate.so" class="text-[var(--brand)] hover:text-[var(--brand-dark)]">deputyminister-moemw@jubalandstate.so</a></p>
+            <a href="#" class="mt-4 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Facebook</a>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-[var(--brand)]/30 bg-white shadow-sm overflow-hidden">
+          <img src="assets/img/official-3.jpg" alt="Director General portrait" class="w-full aspect-[4/3] object-cover" />
+          <div class="p-5">
+            <h3 class="text-[var(--brand)] font-semibold underline decoration-[var(--brand)]/30">Ahmed Osman Siyah</h3>
+            <p class="text-sm mt-1">Director General – MOEWR, Jubaland</p>
+            <p class="text-xs text-slate-600 mt-2">Email: <a href="mailto:dg-moewr@jubalandstate.so" class="text-[var(--brand)] hover:text-[var(--brand-dark)]">dg-moewr@jubalandstate.so</a></p>
+            <a href="#" class="mt-4 inline-block text-xs px-3 py-1 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Facebook</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<!-- end main ======================main====================================================main-->
+<!-- footer -->
+
+<footer class="bg-[#2FA8E1] text-slate-900">
+  <!-- Top mini-nav -->
+  <div class="border-b border-[#0A1A3F]/20">
+    <div class="max-w-7xl mx-auto flex flex-col gap-3 sm:flex-row items-center justify-between px-4 py-3 text-sm">
+      <nav class="flex flex-wrap gap-x-6 gap-y-2">
+        <a href="#" class="hover:text-[#0A1A3F] transition">About</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">Departments</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">Events</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">News</a>
+        <a href="#" class="hover:text-[#0A1A3F] transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <span class="text-slate-900/70">Follow us</span>
+        <a href="#" aria-label="Facebook" class="p-1.5 rounded-full bg-white/70 hover:bg-white transition text-[#0A1A3F]">
+          <!-- Facebook -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M22 12.06C22 6.53 17.52 2 12 2S2 6.53 2 12.06c0 5.02 3.66 9.19 8.44 9.94v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.5-3.88 3.78-3.88 1.1 0 2.25.2 2.25.2v2.46h-1.27c-1.25 0-1.64.78-1.64 1.58v1.9h2.79l-.45 2.9h-2.34V22c4.78-.75 8.44-4.92 8.44-9.94z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="p-1.5 rounded-full bg-white/70 hover:bg-white transition text-[#0A1A3F]">
+          <!-- Twitter/X -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M3 3l7.2 9.6L3.5 21h2.2l5.7-6.6 4.6 6.6H21l-7.6-10.9L20.3 3h-2.2l-5.2 6-4.2-6H3z"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="p-1.5 rounded-full bg-white/70 hover:bg-white transition text-[#0A1A3F]">
+          <!-- YouTube -->
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M23.5 7.1a3.4 3.4 0 0 0-2.4-2.4C19.2 4 12 4 12 4s-7.2 0-9.1.7A3.4 3.4 0 0 0 .5 7.1 35 35 0 0 0 0 12a35 35 0 0 0 .5 4.9 3.4 3.4 0 0 0 2.4 2.4C4.8 20 12 20 12 20s7.2 0 9.1-.7a3.4 3.4 0 0 0 2.4-2.4A35 35 0 0 0 24 12a35 35 0 0 0-.5-4.9zM9.8 15.3V8.7L15.8 12l-6 3.3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main columns -->
+  <div class="relative">
+    <!-- subtle brand gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#2FA8E1] via-[#2FA8E1] to-[#7FD6F5]"></div>
+
+    <div class="relative max-w-7xl mx-auto grid gap-10 md:grid-cols-3 px-4 py-12">
+      <!-- Column 1: MoEWR contact -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">MoEWR</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-900/80">
+          <span class="font-medium">Address:</span> Bondhere District, Mogadishu, Somalia.
+        </p>
+
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <!-- clock -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-[#0A1A3F]"><path fill="currentColor" d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm1 11h5v-2h-4V7h-2v6Z"/></svg>
+            <span><span class="text-slate-900/70">Opening Hours:</span> Sat–Thu: 8:00 am – 6:00 pm</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <!-- phone -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-[#0A1A3F]"><path fill="currentColor" d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .4 2 .6 3.1.6.7 0 1.3.6 1.3 1.3V20c0 .7-.6 1.3-1.3 1.3C9.8 21.3 2.7 14.2 2.7 5.3 2.7 4.6 3.3 4 4 4h3.1c.7 0 1.3.6 1.3 1.3 0 1.1.2 2.1.6 3.1.1.4 0 .9-.3 1.2l-2.1 2.2Z"/></svg>
+            <span>Phone: +252 00 000000</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <!-- mail -->
+            <svg viewBox="0 0 24 24" class="w-5 h-5 mt-0.5 text-[#0A1A3F]"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
+            <span>Email: <a href="mailto:info@moewr.gov.so" class="hover:text-[#0A1A3F] underline decoration-[#0A1A3F]/40">info@moewr.gov.so</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: MoEWR FMS -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">MoEWR FMS</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MoEWR Puntland</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEM – Somaliland</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEWR – Southwest State of Somalia</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEWR – Galmudug</span></a></li>
+          <li><a href="#" class="group flex items-start gap-2 hover:text-[#0A1A3F]">
+            <span class="text-[#0A1A3F]">›</span><span>MOEWR – Jubaland State</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Useful Links -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wide">Useful Links</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Office of the President</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>OPM</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Ministry of Planning</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Environment &amp; Climate Change</span></a></li>
+          <li><a href="#" class="flex items-start gap-2 hover:text-[#0A1A3F]"><span class="text-[#0A1A3F]">›</span><span>Ministry of Petroleum &amp; Mineral</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-[#0A1A3F]/20">
+    <div class="max-w-7xl mx-auto px-4 py-4 text-center text-xs text-slate-900/70">
+      Ministry of Energy &amp; Water Resources © 2023. All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Counter Script -->
+<script>
+  function animateCounter(counter) {
+    const target = +counter.getAttribute("data-target");
+    const speed = 200; // smaller = faster
+    let count = 0;
+
+    const updateCount = () => {
+      const increment = Math.ceil(target / speed);
+      if (count < target) {
+        count += increment;
+        counter.textContent = count;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    updateCount();
+  }
+
+  // Run counter when in viewport
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target); // run once
+      }
+    });
+  }, { threshold: 0.6 });
+
+  document.querySelectorAll(".counter").forEach(counter => {
+    counterObserver.observe(counter);
+  });
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,       // animation duration (ms)
+    easing: 'ease-out',  // easing curve
+    once: true,          // run only once
+  });
+</script>
+
+
+
+
+  <!-- Language Dictionary -->
+ <script src="/js/about.js"></script>
+ <script src="/js/main.js"></script>
+
+</body>
+</html>
